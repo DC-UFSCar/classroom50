@@ -1,0 +1,21 @@
+{
+  "schema": "classroom50/classroom/v1",
+  "name": "Arquitetura e Organização de Computadores (2026S2)",
+  "short_name": "aoc-2026s2",
+  "term": "Winter 2026",
+  "org": "DC-UFSCar",
+  "team": {
+    "id": 18349623,
+    "slug": "classroom50-aoc-2026s2"
+  },
+  "teams": {
+    "instructor": {
+      "id": 18349624,
+      "slug": "classroom50-aoc-2026s2-instructor"
+    },
+    "ta": {
+      "id": 18349626,
+      "slug": "classroom50-aoc-2026s2-ta"
+    }
+  }
+}
