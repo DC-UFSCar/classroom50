@@ -20,7 +20,7 @@
         "source": "auto-detected"
       },
       "allowed_files": [
-        "hello.s"
+        "!hello.s"
       ],
       "tests": [
         {
