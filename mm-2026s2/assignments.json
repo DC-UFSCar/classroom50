@@ -1,4 +1,37 @@
 {
   "schema": "classroom50/assignments/v1",
-  "assignments": []
+  "assignments": [
+    {
+      "slug": "getting-started-asm",
+      "name": "Getting Started (ASM)",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "getting-started-asm",
+        "branch": "main"
+      },
+      "due": "2026-08-31T03:00:00Z",
+      "due_meta": {
+        "input": "2026-08-31T00:00:00",
+        "zone": "America/Sao_Paulo",
+        "offset": "-03:00",
+        "source": "auto-detected"
+      },
+      "allowed_files": [
+        "hello.s"
+      ],
+      "tests": [
+        {
+          "name": "Test Hello",
+          "type": "run",
+          "run": "./run.sh",
+          "points": 10,
+          "setup": "./setup.sh",
+          "exit-code": 0
+        }
+      ]
+    }
+  ]
 }
