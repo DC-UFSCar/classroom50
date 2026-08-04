@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Teacher-triggered scores collector.
 
-Walks the classroom team × assignment manifest: for each (team member,
+Walks the classroom teams × assignment manifest: for each (team member,
 assignment) pair, pages the canonical `<classroom>-<assignment>-<username>`
 repo's `submit/*` releases, validates each `result.json` asset, and upserts
-into `<classroom>/scores.json`. The classroom GitHub team is the source of
-truth for enrollment; students.csv is not read during collection.
+into `<classroom>/scores.json`. The polled members are the union of the
+classroom's STUDENT team and its STAFF teams (teacher/hta/ta), so a staff
+member who accepted an assignment to test the autograde flow is collected like
+a student. Staff who never accepted have no assignment repo, so their poll
+returns no releases and they produce no entry (the "accepted" gate is implicit
+in the per-repo release read). The classroom GitHub teams are the source of
+truth for enrollment; the roster (roster.csv) is only a
+best-effort source of optional display metadata (name/section/email).
 
 `scores.json` is keyed by assignment slug under root `assignments`: each value
 is `{ "type": "individual"|"group", "entries": [...] }`. An `entry` is one
@@ -27,9 +33,11 @@ accepted/submitted); the per-assignment "X of Y submitted" log shows coverage.
 Environment (set by `collect-scores.yaml`):
   CLASSROOM50_SERVICE_TOKEN — fine-grained PAT. Needs Organization ->
                               Members: Read (collection lists the classroom
-                              team) and Repository -> Contents: Read and write
-                              (read scope only used here; write scope shared
-                              with regrade.yaml).
+                              team), Repository -> Contents: Read and write
+                              (read scope used here; write scope shared with
+                              regrade.yaml), and Repository -> Administration:
+                              Read and write (grant staff teams repo access via
+                              PUT teams/.../repos/...).
   CLASSROOM_FILTER          — optional single-classroom limit.
   GITHUB_REPOSITORY_OWNER   — org name (auto-set by Actions).
   GITHUB_API_URL            — API URL on GHES runners.
@@ -44,6 +52,7 @@ Exit codes:
 
 from __future__ import annotations
 
+import csv
 import datetime
 import json
 import os
@@ -64,8 +73,17 @@ SCORES_SCHEMA_V1 = "classroom50/scores/v1"
 RESULT_SCHEMA_V1 = "classroom50/result/v1"
 
 # Trigger contract: only `submit/*` tag releases count as submissions
-# (created by autograde-runner.yaml on push to `main`).
+# (created by autograde-runner.yaml on push to the repo's default branch).
 SUBMIT_TAG_PREFIX = "submit/"
+
+# Repo permission the grant gives each staff role's team. Hand-mirrored from Go
+# StaffTeamRepoPermissions (source of truth; parity-tested) — keep in lockstep.
+# The head-TA/TA-team template read is granted eagerly at assignment add/reuse
+# and classroom migrate (Go side, which hardcodes read there); this collect-time
+# grant reads the value below and is the idempotent re-affirm. A role absent
+# here gets nothing (the teacher team is an org owner with access via ownership,
+# so only the non-owner staff teams — head-TA and TA — need a grant).
+STAFF_TEAM_PERMISSIONS = {"hta": "pull", "ta": "pull"}
 
 RFC3339_RE = re.compile(
     r"^\d{4}-\d{2}-\d{2}T([01]\d|2[0-3]):[0-5]\d:[0-5]\d"
@@ -82,12 +100,19 @@ MAX_RESULT_BYTES = 10 * 1024 * 1024
 
 # Required roster columns written by `gh teacher classroom add`. Mirrors
 # RosterColumns in cli/gh-teacher/internal/configrepo/students_csv.go and the
-# web app's STUDENT_CSV_FIELDS. Just these six identity/metadata columns — an
-# earlier email-first tail was pruned across all three codebases (the classroom
-# GitHub team is the source of truth for enrollment).
-ROSTER_REQUIRED_COLUMNS = ("username", "first_name", "last_name", "email", "section", "github_id")
+# web app's STUDENT_CSV_FIELDS. Identity/metadata columns; `role`
+# (teacher/ta/student, or "") is best-effort recorded metadata refreshed from
+# the classroom's GitHub teams — the teams, not this column, remain the
+# enrollment authority. A pre-role file (ending at github_id) still reads fine:
+# DictReader is header-keyed and a missing column just yields "".
+ROSTER_REQUIRED_COLUMNS = ("username", "first_name", "last_name", "email", "section", "github_id", "role")
 
-# The exact on-disk students.csv header. Must equal FullRosterHeader in the Go
+# Per-classroom roster file. Mirrors contract.RosterFilename in
+# cli/shared/contract/contract.go with NO compile-time link — keep
+# byte-identical.
+ROSTER_FILENAME = "roster.csv"
+
+# The exact on-disk roster.csv header. Must equal FullRosterHeader in the Go
 # students_csv.go (asserted by TestFullRosterHeader) and the web app's
 # STUDENT_CSV_FIELDS header — a three-way lockstep. Retained as the Python leg
 # of that lockstep (the Go download-metadata join and the web writer share it),
@@ -141,8 +166,12 @@ def main() -> int:
             failed_classrooms.append(classroom_short)
             continue
 
+        # Staff-team grant is a SEPARATE, non-fatal pass: it needs Administration
+        # (collection doesn't), so its failure must not abort the core job. On
+        # failure, warn and mark the classroom failed (non-zero exit) but still
+        # collect — here and for every later classroom.
         try:
-            updates, mode_flip_assignments = collect_classroom(
+            grant_classroom_team_access(
                 api_url=api_url,
                 org=org,
                 classroom_short=classroom_short,
@@ -151,11 +180,39 @@ def main() -> int:
                 service_token=service_token,
             )
         except urllib.error.HTTPError as exc:
-            # Auth (401/403) and synthetic-network (599) failures are GLOBAL —
-            # the token is bad or GitHub is unreachable, so every remaining
-            # classroom would fail identically. Abort the whole run loudly
-            # rather than warn-and-skip per classroom (which would report a
-            # broken run as success that collected nothing).
+            grant_hint = (
+                f" — grant staff teams repo access needs a fine-grained PAT with "
+                f"Repository -> Administration: Read and write; run "
+                f"`gh teacher rotate-service-token {org}`"
+                if exc.code in (401, 403)
+                else ""
+            )
+            emit_error(
+                f"{classroom_short}: staff-team access grant failed with HTTP "
+                f"{exc.code} ({exc.reason or 'no reason'}){grant_hint}. Score "
+                f"collection continues; TAs may not see student repos until this "
+                f"is fixed."
+            )
+            failed_classrooms.append(classroom_short)
+
+        try:
+            updates, mode_flip_assignments = collect_classroom(
+                api_url=api_url,
+                org=org,
+                classroom_short=classroom_short,
+                classroom_meta=classroom_meta,
+                assignments=assignments,
+                service_token=service_token,
+                roster_meta=load_roster_metadata(base_dir / classroom_short),
+            )
+        except urllib.error.HTTPError as exc:
+            # Auth (401/403) and synthetic-network (599) failures on COLLECTION
+            # are GLOBAL — the token can't read repos/members or GitHub is
+            # unreachable, so every remaining classroom would fail identically.
+            # Abort the whole run loudly rather than warn-and-skip per classroom
+            # (which would report a broken run as success that collected
+            # nothing). The staff-grant pass above is excluded — its
+            # Administration scope isn't needed to collect.
             if exc.code in (401, 403):
                 emit_error(
                     f"{classroom_short}: service token was rejected with HTTP {exc.code} "
@@ -211,9 +268,14 @@ def main() -> int:
         f"{len(classroom_dirs)} classroom(s)"
     )
     if failed_classrooms:
+        # Dedup (preserve order): a classroom can be recorded once for a
+        # non-fatal staff-grant failure and again for a scores write failure.
+        unique_failed = list(dict.fromkeys(failed_classrooms))
         emit_error(
-            f"collect: {len(failed_classrooms)} classroom(s) failed and were skipped: "
-            f"{', '.join(failed_classrooms)} (the other classrooms were collected)"
+            f"collect: {len(unique_failed)} classroom(s) had a failure (staff-team "
+            f"grant and/or scores write): {', '.join(unique_failed)}. Score "
+            f"collection ran for every classroom; a grant-only failure means TAs "
+            f"may not yet have access."
         )
         return 1
     return 0
@@ -229,10 +291,11 @@ def iter_classrooms(
     schemas skip with a workflow warning (forward-compat without crashing).
 
     Collection is TEAM-driven: the classroom GitHub team is the source of truth
-    for enrollment, so this no longer reads students.csv at all (the team
-    enumeration in collect_classroom drives the pairs). students.csv is optional
-    display metadata consumed elsewhere (the Go download scores.csv join and the
-    web roster view), not by the scorer.
+    for enrollment, so this no longer reads the roster to decide who to poll
+    (the team enumeration in collect_classroom drives the pairs). The roster
+    (roster.csv) is only best-effort display metadata,
+    joined onto collected results and also consumed elsewhere (the Go download
+    scores.csv join and the web roster view).
     """
     if not base_dir.is_dir():
         return
@@ -264,20 +327,124 @@ def iter_classrooms(
         yield entry.name, classroom_meta, assignments
 
 
+# Roster metadata (best-effort) -----------------------------------------------
+
+
+def load_roster_metadata(classroom_dir: pathlib.Path) -> dict[str, dict[str, str]]:
+    """Best-effort roster read for optional display metadata, keyed by
+    lowercased username, from roster.csv. The classroom GitHub team — not this
+    file — is authoritative for enrollment, so a missing/unreadable/malformed
+    roster is NOT fatal: it just yields no metadata (blank name/section/email),
+    never a crash or a dropped student.
+    """
+    path = classroom_dir / ROSTER_FILENAME
+    if not path.is_file():
+        return {}
+    try:
+        with path.open(newline="") as fh:
+            reader = csv.DictReader(fh)
+            meta: dict[str, dict[str, str]] = {}
+            for row in reader:
+                username = (row.get("username") or "").strip()
+                if not username:
+                    continue
+                meta[username.lower()] = {
+                    col: (row.get(col) or "").strip()
+                    for col in ("first_name", "last_name", "email", "section")
+                }
+        return meta
+    except (OSError, csv.Error):
+        # Best-effort: a read/parse failure degrades to blank metadata.
+        return {}
+
+
 # Per-classroom collection ----------------------------------------------------
 
 
+def is_empty_repo(entry: dict[str, Any]) -> bool:
+    """True only when empty_repo is the boolean `true`. The wire contract is a
+    JSON boolean (schema type "boolean"; Go decodes into a strict `bool`), so a
+    non-boolean value from a hand-edited manifest is not empty_repo — matching
+    the Go and TypeScript readers (TS uses `=== true`). Every Python reader
+    (collect/regrade/runner) MUST use this predicate so all tools agree."""
+    return entry.get("empty_repo") is True
+
+
 def valid_assignment_slugs(assignments: dict[str, Any]) -> list[str]:
-    """Slugs worth collecting: non-empty strings, in manifest order. main()'s
-    zero-submission guard counts these; the collect loop applies the same
-    predicate inline (it also needs each entry's `due`), so both agree on what
-    counts as collectable."""
+    """Slugs worth collecting: non-empty strings, in manifest order, excluding
+    empty_repo assignments (their bare repos never autograde, so polling them
+    would only produce dead gradebook rows). main()'s zero-submission guard
+    counts these; the collect loop applies the same predicate inline (it also
+    needs each entry's `due`), so both agree on what counts as collectable."""
+    slugs: list[str] = []
+    for entry in assignments.get("assignments") or []:
+        slug = entry.get("slug")
+        if isinstance(slug, str) and slug and not is_empty_repo(entry):
+            slugs.append(slug)
+    return slugs
+
+
+def all_assignment_slugs(assignments: dict[str, Any]) -> list[str]:
+    """Every valid slug including empty_repo assignments. Staff access grants
+    use this instead of valid_assignment_slugs: a bare repo never autogrades,
+    but TAs still need read on it to review the student-built work."""
     slugs: list[str] = []
     for entry in assignments.get("assignments") or []:
         slug = entry.get("slug")
         if isinstance(slug, str) and slug:
             slugs.append(slug)
     return slugs
+
+
+def list_enrolled_logins(
+    api_url: str,
+    org: str,
+    classroom_meta: dict[str, Any],
+    classroom_short: str,
+    service_token: str,
+) -> tuple[list[str], set[str]]:
+    """Return (polled logins, student logins). The first is the case-insensitive
+    dedup union of the student team and every staff team's members, first-seen
+    order/casing preserved (student team first). The second is the lowercased
+    set of STUDENT-team logins — used only so the per-assignment "X of Y
+    submitted" denominator counts students (expected to submit) rather than
+    every staffer polled (a non-accepting TA is a tester, not missing work).
+
+    Collection polls staff (teacher/hta/ta) too so a staff member testing an
+    assignment is graded like a student — but only when they've ACCEPTED: a
+    staff member with no `<classroom>-<assignment>-<username>` repo returns no
+    releases and so produces no entry (the accepted gate falls out of the
+    per-repo poll; no explicit staff check is needed). A staff member on no
+    team, or one who never accepted, never appears.
+
+    A hard auth/network error (401/403/599) propagates so main() aborts; a soft
+    per-team failure (e.g. a 404 on an uncreated staff team) is warned and that
+    team contributes nobody, matching how the staff-grant pass tolerates a
+    missing team."""
+    student_slug = resolve_team_slug(classroom_meta, classroom_short)
+    # Student team first so its casing wins in the dedup (the repo-name formula
+    # lowercases anyway, so casing is cosmetic — but keep it deterministic).
+    student_logins = list_team_member_logins(api_url, org, student_slug, service_token)
+    logins = list(student_logins)
+    for role, staff_slug in resolve_staff_team_slugs(classroom_meta).items():
+        try:
+            logins.extend(
+                list_team_member_logins(api_url, org, staff_slug, service_token)
+            )
+        except urllib.error.HTTPError as exc:
+            if is_hard_http_error(exc):
+                raise
+            emit_warning(
+                f"{classroom_short}: could not read staff team {staff_slug!r} "
+                f"({role}) members: HTTP {exc.code} ({exc.reason or 'no reason'}); "
+                f"skipping that team's members for collection."
+            )
+        except (json.JSONDecodeError, ValueError) as exc:
+            emit_warning(
+                f"{classroom_short}: staff team {staff_slug!r} ({role}) member "
+                f"listing malformed ({exc}); skipping that team's members."
+            )
+    return _dedupe_logins(logins), {u.strip().lower() for u in student_logins}
 
 
 def collect_classroom(
@@ -288,6 +455,7 @@ def collect_classroom(
     classroom_meta: dict[str, Any],
     assignments: dict[str, Any],
     service_token: str,
+    roster_meta: dict[str, dict[str, str]] | None = None,
 ) -> tuple[list[dict[str, Any]], int]:
     """Return (validated result payloads for every (student, assignment) pair,
     count of assignments whose only submissions were rejected by validation).
@@ -295,7 +463,13 @@ def collect_classroom(
     propagate and main() converts them to exit 1. The second tuple element lets
     main() distinguish a mode-flip-induced empty result (which has its own loud
     warning) from a token-access problem.
+
+    `roster_meta` is the best-effort roster join (username -> display metadata,
+    see load_roster_metadata); when a collected owner has a matching row its
+    name/section/email are attached to the entry. Absent/blank is fine — the
+    join never gates collection.
     """
+    roster_meta = roster_meta or {}
     results: list[dict[str, Any]] = []
     group_attribution_degraded = 0
     # (assignment) buckets where every present submission was rejected by
@@ -304,15 +478,21 @@ def collect_classroom(
     # token-access problem.
     mode_flip_assignments = 0
 
-    # Team-driven username source: the classroom GitHub team is authoritative
-    # for enrollment. students.csv is only optional display metadata, so the
-    # (student, assignment) pairs come from the team member list, NOT the CSV.
-    # A 404 (team missing) or empty team yields no pairs (warn + return),
-    # replacing the old "students.csv missing" skip. A hard auth/network error
-    # propagates so main() aborts the whole run loudly.
+    # Team-driven username source: the classroom GitHub teams are authoritative
+    # for enrollment. The roster (roster.csv) is only
+    # best-effort display metadata, so the (username, assignment) pairs come
+    # from the team member lists, NOT the CSV. The set is the union of the
+    # STUDENT team and every STAFF team (teacher/hta/ta) so a staff member who
+    # accepted an assignment (to test the autograde flow) is collected like a
+    # student — staff who never accepted have no repo, hence no releases, hence
+    # no entry (the accepted gate is implicit in the per-repo poll). A 404
+    # (student team missing) or empty union yields no pairs (warn + return). A
+    # hard auth/network error propagates so main() aborts the whole run loudly.
     team_slug = resolve_team_slug(classroom_meta, classroom_short)
     try:
-        team_logins = list_team_member_logins(api_url, org, team_slug, service_token)
+        team_usernames, student_logins = list_enrolled_logins(
+            api_url, org, classroom_meta, classroom_short, service_token
+        )
     except urllib.error.HTTPError as exc:
         if is_hard_http_error(exc):
             raise
@@ -331,29 +511,28 @@ def collect_classroom(
         )
         return results, mode_flip_assignments
 
-    if not team_logins:
+    if not team_usernames:
         emit_warning(
-            f"{classroom_short}: team {team_slug!r} has no members — no "
-            f"(student, assignment) pairs to poll; skipping."
+            f"{classroom_short}: teams {team_slug!r} (and staff teams) have no "
+            f"members — no (username, assignment) pairs to poll; skipping."
         )
         return results, mode_flip_assignments
 
-    # Deduplicate case-insensitively, preserving first-seen order/casing.
-    seen_logins: set[str] = set()
-    team_usernames: list[str] = []
-    for login in team_logins:
-        key = login.strip().lower()
-        if not key or key in seen_logins:
-            continue
-        seen_logins.add(key)
-        team_usernames.append(login.strip())
-
-    # Group attribution credits a collaborator only if on the team (owner always
-    # credited) — same trust model, team-sourced set.
-    roster_logins = set(seen_logins)
+    # Group attribution credits a collaborator only if on a classroom team
+    # (owner always credited) — same trust model, team-sourced set. Staff are in
+    # the union, so a staff collaborator on a group repo can be credited too.
+    roster_logins = {u.lower() for u in team_usernames}
     for entry in assignments.get("assignments") or []:
         slug = entry.get("slug")
         if not isinstance(slug, str) or not slug:
+            continue
+        # empty_repo assignments never autograde — same predicate as
+        # valid_assignment_slugs, kept in lockstep.
+        if is_empty_repo(entry):
+            print(
+                f"{classroom_short}/{slug}: empty_repo assignment — autograding "
+                f"is disabled; skipping collection"
+            )
             continue
 
         due_raw = entry.get("due")
@@ -368,6 +547,11 @@ def collect_classroom(
         assignment_type = "group" if is_group else "individual"
 
         submitted = 0
+        # Staff (non-student-team) members who actually submitted this
+        # assignment. They count toward the "X of Y" denominator only when they
+        # submitted — a non-accepting staffer is a tester, not missing work, so
+        # counting every polled staffer in Y would understate student coverage.
+        staff_submitted = 0
         # Repos under THIS assignment whose only submissions were rejected by
         # validation (mode-flip symptom); reported once per assignment below.
         mode_flip_repos: list[str] = []
@@ -513,12 +697,27 @@ def collect_classroom(
             }
             if members is not None:
                 entry_row["member_usernames"] = list(members)
+            # Best-effort roster join: attach non-blank display metadata for the
+            # owner when the roster carries a row. Missing/blank is fine (the
+            # team, not the roster, drives enrollment).
+            meta = roster_meta.get(username.lower())
+            if meta:
+                for field in ("first_name", "last_name", "email", "section"):
+                    value = meta.get(field)
+                    if value:
+                        entry_row[field] = value
             entry_row["submissions"] = history
 
             results.append(entry_row)
             submitted += 1
+            if username.strip().lower() not in student_logins:
+                staff_submitted += 1
 
-        print(f"{classroom_short}/{slug}: {submitted}/{len(team_usernames)} submitted")
+        # Denominator: students (expected to submit) + staff who actually
+        # submitted. Non-accepting staff (polled but no repo) are excluded so
+        # the coverage line reads as student coverage, not inflated by testers.
+        expected = len(student_logins) + staff_submitted
+        print(f"{classroom_short}/{slug}: {submitted}/{expected} submitted")
 
         if mode_flip_repos:
             mode_flip_assignments += 1
@@ -544,9 +743,9 @@ def collect_classroom(
 
 
 def assignment_repo_name(classroom: str, assignment: str, username: str) -> str:
-    """Canonical student-repo name. Cross-binary contract — mirrors
-    `assignmentRepoName` in cli/gh-student/accept.go; changing the shape here
-    without updating Go silently breaks the collect loop."""
+    """Canonical student-repo name. Mirrors the formula single-sourced in
+    cli/shared/contract (AssignmentRepoName); keep byte-identical or the
+    collect loop misidentifies submissions."""
     return f"{classroom.lower()}-{assignment.lower()}-{username.lower()}"
 
 
@@ -563,6 +762,185 @@ def resolve_team_slug(classroom_meta: dict[str, Any], classroom_short: str) -> s
             return slug.strip()
     return f"classroom50-{classroom_short}"
 
+
+def resolve_staff_team_slugs(classroom_meta: dict[str, Any]) -> dict[str, str]:
+    """Map each staff role present in classroom.json `teams` to its authoritative
+    slug (role -> slug). Only roles with a non-empty slug are returned; a
+    classroom with no `teams` block yields {}. The slug is authoritative — never
+    re-derived — mirroring resolve_team_slug's contract for the student team."""
+    teams = classroom_meta.get("teams")
+    if not isinstance(teams, dict):
+        return {}
+    out: dict[str, str] = {}
+    for role, ref in teams.items():
+        if not isinstance(ref, dict):
+            continue
+        slug = ref.get("slug")
+        if isinstance(slug, str) and slug.strip():
+            out[role] = slug.strip()
+    return out
+
+
+def get_repo(api_url: str, owner: str, repo: str, token: str) -> dict[str, Any] | None:
+    """GET /repos/{owner}/{repo} → the repo object, or None on 404. Used to read
+    a template's `private` flag before granting a staff team access to it. A hard
+    error (401/403/599) propagates so main() aborts."""
+    url = (
+        f"{api_url}/repos/{urllib.parse.quote(owner, safe='')}/"
+        f"{urllib.parse.quote(repo, safe='')}"
+    )
+    try:
+        body = _http_get(url, token, accept="application/vnd.github+json")
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            return None
+        raise
+    parsed = json.loads(body.decode("utf-8"))
+    return parsed if isinstance(parsed, dict) else None
+
+
+def assignment_template_ref(entry: dict[str, Any]) -> tuple[str, str] | None:
+    """(owner, repo) of an assignment's `template` block, or None when absent or
+    malformed. Mirrors the `template` shape in assignments-v1 ({owner, repo,
+    branch})."""
+    template = entry.get("template")
+    if not isinstance(template, dict):
+        return None
+    owner = template.get("owner")
+    repo = template.get("repo")
+    if isinstance(owner, str) and owner and isinstance(repo, str) and repo:
+        return owner, repo
+    return None
+
+
+def grant_classroom_team_access(
+    *,
+    api_url: str,
+    org: str,
+    classroom_short: str,
+    classroom_meta: dict[str, Any],
+    assignments: dict[str, Any],
+    service_token: str,
+) -> None:
+    """Grant each classroom staff team its mapped repo permission (see
+    STAFF_TEAM_PERMISSIONS) on every EXISTING student assignment repo and on each
+    private, in-org assignment template. Additive + idempotent, so re-running
+    collection re-affirms access cheaply.
+
+    Student-repo targets are the (team member × assignment) product — the same
+    set collect_classroom polls. A per-repo 404/422 (repo not accepted yet, or
+    template not org-owned) is warned-and-skipped; a hard error (401/403/599)
+    propagates so main() aborts. A classroom with no mapped staff team is a no-op.
+    """
+    role_slugs = resolve_staff_team_slugs(classroom_meta)
+    grant_slugs = {
+        role: (slug, STAFF_TEAM_PERMISSIONS[role])
+        for role, slug in role_slugs.items()
+        if role in STAFF_TEAM_PERMISSIONS
+    }
+    if not grant_slugs:
+        return
+
+    # ALL slugs, not just the collectable subset: empty_repo assignments are
+    # skipped by collection but their student repos still exist and staff
+    # still need access to review them.
+    slugs = all_assignment_slugs(assignments)
+    if not slugs:
+        return
+
+    student_team_slug = resolve_team_slug(classroom_meta, classroom_short)
+    try:
+        team_logins = list_team_member_logins(api_url, org, student_team_slug, service_token)
+    except urllib.error.HTTPError as exc:
+        if is_hard_http_error(exc):
+            raise
+        emit_warning(
+            f"{classroom_short}: could not read team {student_team_slug!r} members for "
+            f"staff-access grant: HTTP {exc.code} ({exc.reason or 'no reason'}); skipping grant."
+        )
+        return
+    except (json.JSONDecodeError, ValueError) as exc:
+        emit_warning(
+            f"{classroom_short}: team {student_team_slug!r} member listing malformed "
+            f"({exc}); skipping staff-access grant."
+        )
+        return
+
+    usernames = _dedupe_logins(team_logins)
+
+    # Grant on each existing student repo (the team × assignment product).
+    for role, (team_slug, permission) in grant_slugs.items():
+        granted = 0
+        for slug in slugs:
+            for username in usernames:
+                repo_name = assignment_repo_name(classroom_short, slug, username)
+                try:
+                    if grant_team_repo(
+                        api_url, org, team_slug, org, repo_name, permission, service_token
+                    ):
+                        granted += 1
+                except urllib.error.HTTPError as exc:
+                    if is_hard_http_error(exc):
+                        raise
+                    # 404 = repo not accepted yet; 422 = not org-owned. Neither is
+                    # a token problem — skip that repo.
+                    emit_warning(
+                        f"{org}/{repo_name}: could not grant {team_slug!r} {permission}: "
+                        f"HTTP {exc.code} ({exc.reason or 'no reason'}); skipping"
+                    )
+
+        # Grant on each private, in-org template (starter code the staff team
+        # should also be able to read). Public and out-of-org templates are
+        # skipped: a public template needs no grant, and an out-of-org private
+        # template can't be granted to this org's team.
+        for entry in assignments.get("assignments") or []:
+            ref = assignment_template_ref(entry) if isinstance(entry, dict) else None
+            if ref is None:
+                continue
+            t_owner, t_repo = ref
+            if t_owner.lower() != org.lower():
+                continue
+            try:
+                repo = get_repo(api_url, t_owner, t_repo, service_token)
+            except urllib.error.HTTPError as exc:
+                if is_hard_http_error(exc):
+                    raise
+                emit_warning(
+                    f"{t_owner}/{t_repo}: could not read template for {team_slug!r} grant: "
+                    f"HTTP {exc.code} ({exc.reason or 'no reason'}); skipping"
+                )
+                continue
+            if repo is None or not repo.get("private"):
+                continue
+            try:
+                if grant_team_repo(
+                    api_url, org, team_slug, t_owner, t_repo, permission, service_token
+                ):
+                    granted += 1
+            except urllib.error.HTTPError as exc:
+                if is_hard_http_error(exc):
+                    raise
+                emit_warning(
+                    f"{t_owner}/{t_repo}: could not grant {team_slug!r} {permission}: "
+                    f"HTTP {exc.code} ({exc.reason or 'no reason'}); skipping"
+                )
+
+        if granted:
+            print(f"{classroom_short}: granted {team_slug} {permission} on {granted} repo(s)")
+
+
+def _dedupe_logins(logins: list[str]) -> list[str]:
+    """Case-insensitive dedupe of team logins, preserving first-seen order and
+    casing. Same normalization collect_classroom applies to its team roster."""
+    seen: set[str] = set()
+    out: list[str] = []
+    for login in logins:
+        key = login.strip().lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        out.append(login.strip())
+    return out
 
 
 # Due-date / lateness ---------------------------------------------------------
@@ -706,7 +1084,7 @@ def save_scores(path: pathlib.Path, scores: dict[str, Any]) -> None:
         payload = json.dumps(scores, indent=2, allow_nan=False) + "\n"
     except ValueError as exc:
         raise ScoresFileError(f"{path}: encode failed: {exc}") from exc
-    # Re-parse to catch silent corruption (e.g. NaN in a score) before touching
+    # Re-parse to catch silent corruption (e.g., NaN in a score) before touching
     # the destination file.
     strict_json_loads(payload)
     tmp_path = path.with_name(path.name + ".tmp")
@@ -787,7 +1165,7 @@ def apply_updates(scores: dict[str, Any], updates: Iterable[dict[str, Any]]) -> 
             continue
         if same_submission(existing, entry):
             continue
-        # A group re-collect that drops a previously-credited member (e.g. a
+        # A group re-collect that drops a previously-credited member (e.g., a
         # teammate who left the classroom team but is still a repo collaborator)
         # replaces the entry in place, silently revoking their shared credit.
         # The owner-only warning in collect_classroom only fires on collapse to
@@ -799,7 +1177,7 @@ def apply_updates(scores: dict[str, Any], updates: Iterable[dict[str, Any]]) -> 
                 f"{slug}: group entry owned by {row_key(entry)!r} lost previously-"
                 f"credited member(s) {', '.join(sorted(dropped))} on re-collect. A "
                 f"teammate is credited only while on the classroom team; verify the "
-                f"drop is intended (e.g. an unenrollment) and not a team-vs-students.csv "
+                f"drop is intended (e.g., an unenrollment) and not a team-vs-roster "
                 f"divergence, since the shared score is now revoked for them."
             )
         # Preserve an explicit "override": false on replacement — the teacher's
@@ -816,7 +1194,7 @@ def _dropped_group_members(
     existing: dict[str, Any], incoming: dict[str, Any]
 ) -> set[str]:
     """Members credited on the existing group entry but absent from the incoming
-    one (case-insensitive), i.e. teammates whose shared credit a re-collect
+    one (case-insensitive), i.e., teammates whose shared credit a re-collect
     would silently revoke. Empty for individual entries or when the credited set
     didn't shrink."""
     def credited(entry: dict[str, Any]) -> set[str]:
@@ -1012,7 +1390,7 @@ def all_submit_releases(
 ) -> list[dict[str, Any]]:
     """Every submit-tag release for a repo, newest first, walking the full
     /releases pagination — the complete submission history (a student who pushed
-    N times has N submit/* releases, all returned). Non-submit releases (e.g. a
+    N times has N submit/* releases, all returned). Non-submit releases (e.g., a
     hand-created tag) are filtered out. A 404 (no releases, or repo not
     accepted) yields an empty list.
 
@@ -1163,12 +1541,12 @@ def list_repo_collaborator_logins(
     """Logins of every direct collaborator on owner/repo, walking pagination.
 
     Returns ALL collaborators regardless of permission level. The crediting gate
-    is NOT permission level — it's roster membership, applied by the caller
-    (group_member_usernames intersects with the roster). Filtering on
+    is NOT permission level — it's classroom-team membership, applied by the
+    caller (group_member_usernames intersects with the team). Filtering on
     `role_name == "admin"` here was a bug: a group teammate who is also an org
     owner (admin on every repo), or a founder kept as repo `admin` to invite
     teammates, is `admin` yet a legitimate student — the old filter dropped
-    them, crediting only the owner. Non-student instructors/TAs/org-owners are
+    them, crediting only the owner. Non-student teachers/TAs/org-owners are
     excluded downstream because they're not on the roster, so dropping the admin
     filter here loses no protection.
 
@@ -1194,7 +1572,7 @@ def list_team_member_logins(
 ) -> list[str]:
     """Logins of every member of the classroom team, walking pagination. The
     team-driven username source for collection: the classroom GitHub team is
-    authoritative for enrollment (students.csv is only optional display
+    authoritative for enrollment (the roster is only best-effort display
     metadata). Hits GET /orgs/{org}/teams/{slug}/members.
 
     Pagination follows GitHub's `Link: rel="next"` header, host-pinned to
@@ -1218,30 +1596,35 @@ def group_member_usernames(
     api_url: str, org: str, repo: str, owner_username: str, token: str, roster_logins: set[str]
 ) -> list[str]:
     """Member list for a group submission: the repo's collaborators (any
-    permission) **intersected with the roster** (case-insensitive), sorted and
-    deduped, owner guaranteed present. Crediting is gated on roster membership,
-    NOT collaborator permission: a rostered teammate is credited whether push or
-    admin (an org owner is admin everywhere; a founder is kept admin to invite).
-    A non-rostered collaborator (instructor, TA, non-student org owner, or an
-    account added out-of-band) is never credited. Raises on the underlying
-    HTTP/parse error so the caller can fall back to owner-only.
+    permission) **intersected with the classroom team** (case-insensitive),
+    sorted and deduped, owner guaranteed present. Crediting is gated on team
+    membership, NOT collaborator permission: a teammate on the classroom team is
+    credited whether push or admin (an org owner is admin everywhere; a founder
+    is kept admin to invite). A collaborator not on the team (teacher, TA,
+    non-student org owner, or an account added out-of-band) is never credited.
+    Raises on the underlying HTTP/parse error so the caller can fall back to
+    owner-only.
 
-    TRUST ASSUMPTION (F6, documented residual): every rostered collaborator on
-    the repo is credited. GitHub doesn't record HOW a collaborator was added, so
-    collection can't distinguish a teammate the founder invited via `gh student
-    invite` from one a student added via the UI. The roster intersection bounds
-    the blast radius to rostered classmates — a stranger can never be credited —
-    but a student could add a rostered classmate and credit them this score.
-    Treating that as acceptable (rostered students are mutually trusted within a
-    classroom) is the deliberate, simple model; see wiki/Autograders.md.
-    Tightening it would require a teacher-approved group manifest, out of scope.
+    (`roster_logins` is the case-folded set of classroom-team logins the caller
+    passes in — the team is authoritative for enrollment; the name is legacy.)
+
+    TRUST ASSUMPTION (F6, documented residual): every teammate on the classroom
+    team who is a collaborator on the repo is credited. GitHub doesn't record HOW
+    a collaborator was added, so collection can't distinguish a teammate the
+    founder invited via `gh student invite` from one a student added via the UI.
+    The team intersection bounds the blast radius to classmates on the team — a
+    stranger can never be credited — but a student could add a teammate on the
+    team and credit them this score. Treating that as acceptable (classmates on
+    the team are mutually trusted within a classroom) is the deliberate, simple
+    model; see wiki/Autograders.md. Tightening it would require a teacher-approved
+    group manifest, out of scope.
     """
     logins = list_repo_collaborator_logins(api_url, org, repo, token)
     seen: dict[str, str] = {}
     owner_key = owner_username.lower()
     for login in [owner_username, *logins]:
         key = login.lower()
-        # Owner always credited; other collaborators only if on the roster.
+        # Owner always credited; other collaborators only if on the team.
         if key != owner_key and key not in roster_logins:
             continue
         if key not in seen:
@@ -1411,6 +1794,105 @@ def _http_get_with_headers(
                 fp=None,
             ) from exc
     raise RuntimeError(f"_http_get_with_headers called with _retries={_retries}")
+
+
+def _http_send(
+    method: str,
+    url: str,
+    token: str,
+    *,
+    accept: str,
+    body: bytes | None,
+    _retries: int = 3,
+) -> tuple[int, bytes]:
+    """Issue `method url` with bearer auth; return (status, body). Same
+    retry/backoff and synthetic-599 contract as _http_get_with_headers (and
+    _OPENER strips Authorization on a cross-host redirect). Mirrors
+    regrade_repos.py's transport; used only for the team-repo grant PUT/GET."""
+    headers = {
+        "Accept": accept,
+        "Authorization": f"Bearer {token}",
+        "User-Agent": "classroom50-collect-scores",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    if body is not None:
+        headers["Content-Type"] = "application/json"
+    for attempt in range(_retries):
+        req = urllib.request.Request(url, method=method, data=body, headers=headers)
+        try:
+            with _OPENER.open(req, timeout=30) as resp:
+                return resp.status, resp.read()
+        except urllib.error.HTTPError as exc:
+            if exc.code in (429, 500, 502, 503, 504) and attempt < _retries - 1:
+                retry_after = exc.headers.get("Retry-After") if exc.headers else None
+                delay = min(int(retry_after), 30) if (retry_after or "").isdigit() else 2 ** attempt
+                time.sleep(delay)
+                continue
+            raise
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            if attempt < _retries - 1:
+                time.sleep(2 ** attempt)
+                continue
+            raise urllib.error.HTTPError(
+                url=url,
+                code=599,
+                msg=f"network error: {exc}",
+                hdrs=None,  # type: ignore[arg-type]
+                fp=None,
+            ) from exc
+    raise RuntimeError(f"_http_send called with _retries={_retries}")
+
+
+def team_has_repo_access(
+    api_url: str, org: str, team_slug: str, repo_owner: str, repo: str, token: str
+) -> bool:
+    """Whether `team_slug` already has any access to <repo_owner>/<repo> (2xx =
+    yes, 404 = no). Keeps grant_team_repo idempotent. Mirrors Go's
+    teamHasRepoAccess."""
+    url = (
+        f"{api_url}/orgs/{urllib.parse.quote(org, safe='')}/teams/"
+        f"{urllib.parse.quote(team_slug, safe='')}/repos/"
+        f"{urllib.parse.quote(repo_owner, safe='')}/{urllib.parse.quote(repo, safe='')}"
+    )
+    try:
+        _http_send("GET", url, token, accept="application/vnd.github+json", body=None)
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            return False
+        raise
+    return True
+
+
+def grant_team_repo(
+    api_url: str,
+    org: str,
+    team_slug: str,
+    repo_owner: str,
+    repo: str,
+    permission: str,
+    token: str,
+) -> bool:
+    """Grant `team_slug` `permission` on <repo_owner>/<repo> via
+    PUT /orgs/{org}/teams/{slug}/repos/{owner}/{repo}, skipping the write when
+    the team already has any access (idempotent). Returns whether a new grant was
+    applied. Mirrors Go's grantTeamRepo. A 403 (token lacks Administration) or
+    599 propagates so main() aborts the run (is_hard_http_error); a 404/422 (repo
+    absent / not org-owned) is left for the caller to warn-and-skip."""
+    if team_has_repo_access(api_url, org, team_slug, repo_owner, repo, token):
+        return False
+    url = (
+        f"{api_url}/orgs/{urllib.parse.quote(org, safe='')}/teams/"
+        f"{urllib.parse.quote(team_slug, safe='')}/repos/"
+        f"{urllib.parse.quote(repo_owner, safe='')}/{urllib.parse.quote(repo, safe='')}"
+    )
+    _http_send(
+        "PUT",
+        url,
+        token,
+        accept="application/vnd.github+json",
+        body=json.dumps({"permission": permission}).encode("utf-8"),
+    )
+    return True
 
 
 def is_hard_http_error(exc: urllib.error.HTTPError) -> bool:

@@ -11,9 +11,9 @@ name: Publish Pages
 on:
   push:
     branches: ["main"]
-    # Skip the redeploy for roster-only commits: students.csv isn't published.
+    # Skip the redeploy for roster-only commits: the roster isn't published.
     paths-ignore:
-      - "**/students.csv"
+      - "**/roster.csv"
   workflow_dispatch:
 
 permissions:
@@ -151,7 +151,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import glob, json, os
-          # Public fields only — keep internal/teacher-side keys (e.g. the
+          # Public fields only — keep internal/teacher-side keys (e.g., the
           # `team` block, which carries the GitHub team id/slug) out of the
           # unauthenticated Pages index. New public fields must be added
           # here explicitly rather than dumping classroom.json wholesale.
