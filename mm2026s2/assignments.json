@@ -1,4 +1,29 @@
 {
   "schema": "classroom50/assignments/v1",
-  "assignments": []
+  "assignments": [
+    {
+      "slug": "getting-started-with-asm",
+      "name": "Getting Started with ASM",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "getting-started-asm",
+        "branch": "main"
+      },
+      "tests": [
+        {
+          "name": "Test Hello",
+          "type": "run",
+          "run": "./run.sh",
+          "points": 10,
+          "setup": "./setup.sh"
+        }
+      ],
+      "submission_mode": "every-push"
+    }
+  ]
 }
