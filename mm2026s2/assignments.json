@@ -16,7 +16,7 @@
       },
       "runtime": {
         "container": {
-          "image": "ghcr.io/dc-ufscar/classroom50:2026.08"
+          "image": "ghcr.io/dc-ufscar/classroom50:latest"
         }
       },
       "tests": [
