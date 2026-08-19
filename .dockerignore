@@ -1,0 +1,8 @@
+.git
+.github
+*.tar.gz
+*.zip
+tests
+dist
+build
+__pycache__
