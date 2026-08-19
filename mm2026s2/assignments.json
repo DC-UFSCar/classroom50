@@ -14,6 +14,11 @@
         "repo": "getting-started-asm",
         "branch": "main"
       },
+      "runtime": {
+        "container": {
+          "image": "ghcr.io/dc-ufscar/classroom50:2026.08"
+        }
+      },
       "tests": [
         {
           "name": "Test Hello",
