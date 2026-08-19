@@ -1,4 +1,48 @@
 {
   "schema": "classroom50/scores/v1",
-  "assignments": {}
+  "assignments": {
+    "hello-asm": {
+      "type": "individual",
+      "entries": [
+        {
+          "owner": "menotti",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "menotti",
+              "submission": "submit/2026-08-19T15-06-00Z-cc78c3c",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-menotti/commit/cc78c3c205b3f6646dcbedecf33ff76585885a25",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-menotti/releases/tag/submit%2F2026-08-19T15-06-00Z-cc78c3c",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-menotti/compare/78eff897a84d8677f2a1f09bc353dc7162a87f6c...cc78c3c205b3f6646dcbedecf33ff76585885a25",
+              "datetime": "2026-08-19T15:05:48Z",
+              "graded_at": "2026-08-19T15:07:08Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "menotti",
+                "id": 1031350
+              }
+            }
+          ]
+        }
+      ],
+      "collected_at": "2026-08-19T15:08:12Z"
+    }
+  }
 }
