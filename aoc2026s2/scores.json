@@ -40,9 +40,47 @@
               }
             }
           ]
+        },
+        {
+          "owner": "vinicius-daros",
+          "email": "vinicius.daros@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "vinicius-daros",
+              "submission": "submit/2026-08-19T18-27-56Z-091b886",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-vinicius-daros/commit/091b88612579b7787a931bcd407df0456f10b3ac",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-vinicius-daros/releases/tag/submit%2F2026-08-19T18-27-56Z-091b886",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-vinicius-daros/compare/f7f038030fee96c6f0f7f9b9653282a08fd8b055...091b88612579b7787a931bcd407df0456f10b3ac",
+              "datetime": "2026-08-19T18:27:35Z",
+              "graded_at": "2026-08-19T18:29:22Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "vinicius-daros",
+                "id": 181356917
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-08-19T15:08:42Z"
+      "collected_at": "2026-08-19T18:44:47Z"
     }
   }
 }
