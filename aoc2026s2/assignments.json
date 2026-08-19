@@ -1,4 +1,47 @@
 {
   "schema": "classroom50/assignments/v1",
-  "assignments": []
+  "assignments": [
+    {
+      "slug": "hello-asm",
+      "name": "Hello ASM",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": false,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "getting-started-asm",
+        "branch": "main"
+      },
+      "runtime": {
+        "apt": [
+          "gcc-riscv64-linux-gnu",
+          "binutils-riscv64-linux-gnu",
+          "qemu-user",
+          "qemu-user-static"
+        ]
+      },
+      "tests": [
+        {
+          "name": "Exit code",
+          "type": "run",
+          "run": "qemu-riscv64 ./hello.elf",
+          "points": 5,
+          "setup": "riscv64-linux-gnu-as hello.s -o hello.o && riscv64-linux-gnu-ld hello.o -o hello.elf",
+          "exit-code": 42
+        },
+        {
+          "name": "Print hello",
+          "type": "io",
+          "run": "qemu-riscv64 ./hello.elf",
+          "points": 5,
+          "setup": "riscv64-linux-gnu-as hello.s -o hello.o && riscv64-linux-gnu-ld hello.o -o hello.elf",
+          "comparison": "included",
+          "expected": "Hello RISC-V!"
+        }
+      ],
+      "submission_mode": "every-push"
+    }
+  ]
 }
