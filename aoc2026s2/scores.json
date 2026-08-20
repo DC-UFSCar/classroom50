@@ -78,9 +78,47 @@
               }
             }
           ]
+        },
+        {
+          "owner": "1k3nj1",
+          "email": "henriquesasamoto@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "1k3nj1",
+              "submission": "submit/2026-08-19T23-22-53Z-2e59ba4",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-1k3nj1/commit/2e59ba409627280c772efb6196f90623dcbcda6e",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-1k3nj1/releases/tag/submit%2F2026-08-19T23-22-53Z-2e59ba4",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-1k3nj1/compare/eb7f3043a0cd519327e5b0893c24f31f77f52d79...2e59ba409627280c772efb6196f90623dcbcda6e",
+              "datetime": "2026-08-19T23:22:25Z",
+              "graded_at": "2026-08-19T23:23:37Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "1k3nj1",
+                "id": 109699507
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-08-19T18:44:47Z"
+      "collected_at": "2026-08-20T04:30:44Z"
     }
   }
 }
