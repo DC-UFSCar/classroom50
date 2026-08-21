@@ -116,9 +116,160 @@
               }
             }
           ]
+        },
+        {
+          "owner": "itzxw",
+          "email": "italo.vieira@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "itzxw",
+              "submission": "submit/2026-08-20T22-33-59Z-453b7a1",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-itzxw/commit/453b7a1f896eaac1b82697eab598c6994c74e059",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-itzxw/releases/tag/submit%2F2026-08-20T22-33-59Z-453b7a1",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-itzxw/compare/b7406af22ac6ad19b7546299420c8d71f4bbfc8f...453b7a1f896eaac1b82697eab598c6994c74e059",
+              "datetime": "2026-08-20T22:33:38Z",
+              "graded_at": "2026-08-20T22:34:27Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "itzxw",
+                "id": 139888604
+              }
+            }
+          ]
+        },
+        {
+          "owner": "Iago3457",
+          "email": "iagosouza@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "iago3457",
+              "submission": "submit/2026-08-20T15-19-17Z-d0167e6",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-iago3457/commit/d0167e6ab044644802dfe40bebce01c6c4e5dc02",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-iago3457/releases/tag/submit%2F2026-08-20T15-19-17Z-d0167e6",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-iago3457/compare/ef6bade54e182b844328ecbdc7e20d68307605a7...d0167e6ab044644802dfe40bebce01c6c4e5dc02",
+              "datetime": "2026-08-20T15:18:49Z",
+              "graded_at": "2026-08-20T15:19:46Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "Iago3457",
+                "id": 186886611
+              }
+            }
+          ]
+        },
+        {
+          "owner": "josewinterle",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "josewinterle",
+              "submission": "submit/2026-08-20T15-32-11Z-2385454",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-josewinterle/commit/23854548c05aefb21a310c3ce09001abb39f728c",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-josewinterle/releases/tag/submit%2F2026-08-20T15-32-11Z-2385454",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-josewinterle/compare/515f0aa83838d49e6bd3ce520d7faef495e44303...23854548c05aefb21a310c3ce09001abb39f728c",
+              "datetime": "2026-08-20T15:31:13Z",
+              "graded_at": "2026-08-20T15:32:35Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "josewinterle",
+                "id": 269516317
+              }
+            }
+          ]
+        },
+        {
+          "owner": "khrizzylee",
+          "email": "kelechiigbojionu@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "khrizzylee",
+              "submission": "submit/2026-08-20T22-34-13Z-b33c4c6",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-khrizzylee/commit/b33c4c63e3dfebe9b8c880066ebf0a37ba531074",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-khrizzylee/releases/tag/submit%2F2026-08-20T22-34-13Z-b33c4c6",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-khrizzylee/compare/51664a36991e0bf4de382995c28b97ddcaeeff11...b33c4c63e3dfebe9b8c880066ebf0a37ba531074",
+              "datetime": "2026-08-20T22:33:53Z",
+              "graded_at": "2026-08-20T22:34:38Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "khrizzylee",
+                "id": 318814028
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-08-20T14:48:59Z"
+      "collected_at": "2026-08-21T14:34:13Z"
     }
   }
 }
