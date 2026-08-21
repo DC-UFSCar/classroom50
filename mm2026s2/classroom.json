@@ -1,0 +1,25 @@
+{
+  "schema": "classroom50/classroom/v1",
+  "name": "Microprocessadores e Microcontroladores",
+  "short_name": "mm2026s2",
+  "term": "2026s2",
+  "org": "DC-UFSCar",
+  "team": {
+    "id": 19100053,
+    "slug": "classroom50-mm2026s2"
+  },
+  "teams": {
+    "teacher": {
+      "id": 19100054,
+      "slug": "classroom50-mm2026s2-teacher"
+    },
+    "hta": {
+      "id": 19100056,
+      "slug": "classroom50-mm2026s2-hta"
+    },
+    "ta": {
+      "id": 19100057,
+      "slug": "classroom50-mm2026s2-ta"
+    }
+  }
+}
