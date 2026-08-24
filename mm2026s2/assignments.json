@@ -49,7 +49,6 @@
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
-      "no_autograder": true,
       "copy_about": true,
       "copy_topics": true,
       "template": {
@@ -57,9 +56,26 @@
         "repo": "getting-started",
         "branch": "main"
       },
-      "grading": {
-        "mode": "off"
-      }
+      "runtime": {
+        "apt": [
+          "iverilog"
+        ]
+      },
+      "tests": [
+        {
+          "name": "setup",
+          "type": "run",
+          "run": "./setup.sh",
+          "points": 0,
+          "timeout": 120
+        },
+        {
+          "name": "Test hello",
+          "type": "run",
+          "run": "./run.sh",
+          "points": 10
+        }
+      ]
     }
   ]
 }
