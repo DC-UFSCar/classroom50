@@ -40,9 +40,345 @@
               }
             }
           ]
+        },
+        {
+          "owner": "M4th-e",
+          "email": "matheus.cavalcanti@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "m4th-e",
+              "submission": "submit/2026-08-24T15-33-54Z-8c98e2d",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-m4th-e/commit/8c98e2da0f9c3419abe1894ed0c489304fe2b63c",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-m4th-e/releases/tag/submit%2F2026-08-24T15-33-54Z-8c98e2d",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-m4th-e/compare/a360b0db0fccc69f8636da259b1566e6d0ede715...8c98e2da0f9c3419abe1894ed0c489304fe2b63c",
+              "datetime": "2026-08-24T15:33:22Z",
+              "graded_at": "2026-08-24T15:34:21Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "M4th-e",
+                "id": 227410432
+              }
+            }
+          ]
+        },
+        {
+          "owner": "rlfraguasUFSCar",
+          "email": "rafaelfraguas@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "rlfraguasufscar",
+              "submission": "submit/2026-08-24T15-14-07Z-e3e4317",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-rlfraguasufscar/commit/e3e43178bca9a8f5d4ab13de96453080f73e916f",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-rlfraguasufscar/releases/tag/submit%2F2026-08-24T15-14-07Z-e3e4317",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-rlfraguasufscar/compare/6dc3d943d09e8d25c7702143270f8d651f0fd7ea...e3e43178bca9a8f5d4ab13de96453080f73e916f",
+              "datetime": "2026-08-24T15:13:46Z",
+              "graded_at": "2026-08-24T15:14:33Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "rlfraguasUFSCar",
+                "id": 245873291
+              }
+            }
+          ]
+        },
+        {
+          "owner": "shengyanhuang1711",
+          "email": "yanhuang@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "shengyanhuang1711",
+              "submission": "submit/2026-08-24T20-09-50Z-ab8a2a0",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-shengyanhuang1711/commit/ab8a2a0ba48e450275ba1bea8ab141e98f01f586",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-shengyanhuang1711/releases/tag/submit%2F2026-08-24T20-09-50Z-ab8a2a0",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-shengyanhuang1711/compare/86f03910237374e7c1a722257cfde4e5559d9d2e...ab8a2a0ba48e450275ba1bea8ab141e98f01f586",
+              "datetime": "2026-08-24T20:09:36Z",
+              "graded_at": "2026-08-24T20:10:18Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "shengyanhuang1711",
+                "id": 318268596
+              }
+            }
+          ]
+        },
+        {
+          "owner": "anacags-alt",
+          "email": "anacags@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "anacags-alt",
+              "submission": "submit/2026-08-24T23-25-34Z-6dc9f8d",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-anacags-alt/commit/6dc9f8d283bebf884a99810ab075e901f1809aa2",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-anacags-alt/releases/tag/submit%2F2026-08-24T23-25-34Z-6dc9f8d",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-anacags-alt/compare/4ad58a7eb5873cf1456978c5a3a5bb4f5b6fdaa1...6dc9f8d283bebf884a99810ab075e901f1809aa2",
+              "datetime": "2026-08-24T23:25:17Z",
+              "graded_at": "2026-08-24T23:25:58Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "anacags-alt",
+                "id": 318268783
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "anacags-alt",
+              "submission": "submit/2026-08-24T23-10-03Z-a6069d9",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-anacags-alt/commit/a6069d9c0ffcf0f7d962f0f1b0da262518a6facf",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-anacags-alt/releases/tag/submit%2F2026-08-24T23-10-03Z-a6069d9",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-anacags-alt/compare/4ad58a7eb5873cf1456978c5a3a5bb4f5b6fdaa1...a6069d9c0ffcf0f7d962f0f1b0da262518a6facf",
+              "datetime": "2026-08-24T23:09:31Z",
+              "graded_at": "2026-08-24T23:10:35Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "anacags-alt",
+                "id": 318268783
+              }
+            }
+          ]
+        },
+        {
+          "owner": "raulmartinsbessan-byte",
+          "email": "raulmartinsbessan@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "raulmartinsbessan-byte",
+              "submission": "submit/2026-08-25T00-42-49Z-aab632d",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-raulmartinsbessan-byte/commit/aab632d5867a2dd011fe0c0c2258bdae93660319",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-raulmartinsbessan-byte/releases/tag/submit%2F2026-08-25T00-42-49Z-aab632d",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-raulmartinsbessan-byte/compare/9434909f50b2a4ff4b870cc933497e4a832e0741...aab632d5867a2dd011fe0c0c2258bdae93660319",
+              "datetime": "2026-08-25T00:42:35Z",
+              "graded_at": "2026-08-25T00:43:16Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "raulmartinsbessan-byte",
+                "id": 318269770
+              }
+            }
+          ]
+        },
+        {
+          "owner": "pedrocanales-svg",
+          "email": "pedrocanales@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "pedrocanales-svg",
+              "submission": "submit/2026-08-25T01-10-25Z-2d13238",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-pedrocanales-svg/commit/2d13238388698fa31e777bf136803a82a5eed618",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-pedrocanales-svg/releases/tag/submit%2F2026-08-25T01-10-25Z-2d13238",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-pedrocanales-svg/compare/7fefcdcdff5f3725176dc051452ad0cf5dd9403a...2d13238388698fa31e777bf136803a82a5eed618",
+              "datetime": "2026-08-25T01:10:11Z",
+              "graded_at": "2026-08-25T01:10:54Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "pedrocanales-svg",
+                "id": 318282608
+              }
+            }
+          ]
+        },
+        {
+          "owner": "sciarramellofelipe",
+          "email": "felipesciarramello@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "sciarramellofelipe",
+              "submission": "submit/2026-08-25T02-05-09Z-af85cb2",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-sciarramellofelipe/commit/af85cb2a1a1f75c5a594d122f3823d61d4d4786f",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-sciarramellofelipe/releases/tag/submit%2F2026-08-25T02-05-09Z-af85cb2",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-sciarramellofelipe/compare/de087303842caa8f50cef533cc59174b0bb957d2...af85cb2a1a1f75c5a594d122f3823d61d4d4786f",
+              "datetime": "2026-08-25T02:04:41Z",
+              "graded_at": "2026-08-25T02:05:35Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "sciarramellofelipe",
+                "id": 318283661
+              }
+            }
+          ]
+        },
+        {
+          "owner": "laurafrancoso102",
+          "email": "laurafrancoso@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "laurafrancoso102",
+              "submission": "submit/2026-08-24T23-06-35Z-817f859",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-laurafrancoso102/commit/817f859ebf466a1306dcefb53e0f35cef3027208",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-laurafrancoso102/releases/tag/submit%2F2026-08-24T23-06-35Z-817f859",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-asm-laurafrancoso102/compare/9dac25a85ea54f078707c656598406a1358becc9...817f859ebf466a1306dcefb53e0f35cef3027208",
+              "datetime": "2026-08-24T23:06:20Z",
+              "graded_at": "2026-08-24T23:07:00Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "laurafrancoso102",
+                "id": 318321606
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-08-24T14:15:31Z"
+      "collected_at": "2026-08-25T12:53:12Z"
     }
   }
 }
