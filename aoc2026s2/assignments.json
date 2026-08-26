@@ -42,6 +42,41 @@
         }
       ],
       "submission_mode": "every-push"
+    },
+    {
+      "slug": "registers-memory",
+      "name": "Registers & Memory",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "register-memory",
+        "branch": "main"
+      },
+      "runtime": {
+        "apt": [
+          "iverilog"
+        ]
+      },
+      "tests": [
+        {
+          "name": "Test values",
+          "type": "run",
+          "run": "./tests/run.sh values",
+          "points": 5,
+          "setup": "./setup.sh"
+        },
+        {
+          "name": "Test output",
+          "type": "run",
+          "run": "./tests/run.sh test",
+          "points": 5,
+          "setup": "./setup.sh"
+        }
+      ]
     }
   ]
 }
