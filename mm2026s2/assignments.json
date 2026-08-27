@@ -76,6 +76,26 @@
           "points": 10
         }
       ]
+    },
+    {
+      "slug": "trabalho-0-up1",
+      "name": "Trabalho 0 (uP1)",
+      "mode": "group",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "menotti",
+        "repo": "up1",
+        "branch": "master"
+      },
+      "max_group_size": 7,
+      "grading": {
+        "mode": "manual",
+        "max_points": 10
+      }
     }
   ]
 }
