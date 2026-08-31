@@ -146,6 +146,25 @@
           "points": 10
         }
       ]
+    },
+    {
+      "slug": "decode-game",
+      "name": "Decode Game",
+      "mode": "group",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "decode-game",
+        "branch": "main"
+      },
+      "max_group_size": 8,
+      "grading": {
+        "mode": "off"
+      }
     }
   ]
 }
