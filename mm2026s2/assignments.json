@@ -137,6 +137,25 @@
       "grading": {
         "mode": "off"
       }
+    },
+    {
+      "slug": "trabalho-1-up1",
+      "name": "Trabalho 1 (uP1)",
+      "mode": "group",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "menotti",
+        "repo": "up1",
+        "branch": "master"
+      },
+      "max_group_size": 6,
+      "grading": {
+        "mode": "off"
+      }
     }
   ]
 }
