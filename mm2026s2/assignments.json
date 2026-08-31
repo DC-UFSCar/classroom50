@@ -138,6 +138,25 @@
           "points": 4
         }
       ]
+    },
+    {
+      "slug": "trabalho-2-mmio",
+      "name": "Trabalho 2 (MMIO)",
+      "mode": "group",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "menotti",
+        "repo": "lightriscv",
+        "branch": "main"
+      },
+      "max_group_size": 6,
+      "grading": {
+        "mode": "off"
+      }
     }
   ]
 }
