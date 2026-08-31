@@ -79,7 +79,7 @@ SUBMIT_TAG_PREFIX = "submit/"
 # Repo permission the grant gives each staff role's team. Hand-mirrored from Go
 # StaffTeamRepoPermissions (source of truth; parity-tested) — keep in lockstep.
 # The head-TA/TA-team template read is granted eagerly at assignment add/reuse
-# and classroom migrate (Go side, which hardcodes read there); this collect-time
+# (Go side, which hardcodes read there); this collect-time
 # grant reads the value below and is the idempotent re-affirm. A role absent
 # here gets nothing (the teacher team is an org owner with access via ownership,
 # so only the non-owner staff teams — head-TA and TA — need a grant).
@@ -142,11 +142,12 @@ MAX_RESULT_BYTES = 10 * 1024 * 1024
 
 # Required roster columns written by `gh teacher classroom add`. Mirrors
 # RosterColumns in cli/gh-teacher/internal/configrepo/students_csv.go and the
-# web app's STUDENT_CSV_FIELDS. Identity/metadata columns; `role`
+# web app's STUDENT_CSV_FIELDS. Identity/metadata columns; the trailing `role`
 # (teacher/ta/student, or "") is best-effort recorded metadata refreshed from
 # the classroom's GitHub teams — the teams, not this column, remain the
-# enrollment authority. A pre-role file (ending at github_id) still reads fine:
-# DictReader is header-keyed and a missing column just yields "".
+# enrollment authority. role was added additively, so a file written before it
+# still reads fine: DictReader is header-keyed and a missing column just
+# yields "".
 ROSTER_REQUIRED_COLUMNS = ("username", "first_name", "last_name", "email", "section", "github_id", "role")
 
 # Per-classroom roster file. Mirrors contract.RosterFilename in
