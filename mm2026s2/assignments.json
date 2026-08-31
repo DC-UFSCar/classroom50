@@ -79,7 +79,7 @@
     },
     {
       "slug": "trabalho-0-up1",
-      "name": "Trabalho 0 (uP1)",
+      "name": "Trabalho 1 (uP1)",
       "mode": "group",
       "autograder": "default",
       "feedback_pr": true,
