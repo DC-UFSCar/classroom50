@@ -119,6 +119,33 @@
           "points": 4
         }
       ]
+    },
+    {
+      "slug": "rf-test-bench",
+      "name": "RF Test Bench",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "rf-test-bench",
+        "branch": "main"
+      },
+      "runtime": {
+        "apt": [
+          "iverilog"
+        ]
+      },
+      "tests": [
+        {
+          "name": "RF test bench",
+          "type": "run",
+          "run": "./run.sh",
+          "points": 10
+        }
+      ]
     }
   ]
 }
