@@ -379,6 +379,19 @@
         }
       ],
       "collected_at": "2026-08-25T12:53:12Z"
+    },
+    "trabalho-1-up1": {
+      "type": "group",
+      "entries": [],
+      "collected_at": "2026-09-01T14:19:11Z",
+      "detected": [
+        {
+          "owner": "ivantamura",
+          "count": 1,
+          "latest_datetime": "2026-09-01T14:08:30Z",
+          "kind": "commit"
+        }
+      ]
     }
   }
 }
