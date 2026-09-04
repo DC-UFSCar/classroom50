@@ -575,6 +575,579 @@
           "kind": "commit"
         }
       ]
+    },
+    "hello-verilog": {
+      "type": "individual",
+      "entries": [
+        {
+          "owner": "M4th-e",
+          "email": "matheus.cavalcanti@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "m4th-e",
+              "submission": "submit/2026-09-01T13-59-13Z-df4eab0",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-m4th-e/commit/df4eab078b577d3154666e1c28c735c840d6505f",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-m4th-e/releases/tag/submit%2F2026-09-01T13-59-13Z-df4eab0",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-m4th-e/compare/f121d473174d8c8fd4917a6ffc8933c4b04e915f...df4eab078b577d3154666e1c28c735c840d6505f",
+              "datetime": "2026-09-01T13:58:54Z",
+              "graded_at": "2026-09-01T13:59:39Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "M4th-e",
+                "id": 227410432
+              }
+            }
+          ]
+        },
+        {
+          "owner": "rlfraguasUFSCar",
+          "email": "rafaelfraguas@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "rlfraguasufscar",
+              "submission": "submit/2026-08-31T22-13-39Z-7bb6fc7",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-rlfraguasufscar/commit/7bb6fc775dce490a01915e5384e79c766b8daa5f",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-rlfraguasufscar/releases/tag/submit%2F2026-08-31T22-13-39Z-7bb6fc7",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-rlfraguasufscar/compare/42dc6cf4bf7dc7433a2cf6430e823d5929d2a773...7bb6fc775dce490a01915e5384e79c766b8daa5f",
+              "datetime": "2026-08-31T22:13:25Z",
+              "graded_at": "2026-08-31T22:14:05Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "rlfraguasUFSCar",
+                "id": 245873291
+              }
+            }
+          ]
+        },
+        {
+          "owner": "marianapipolo-blip",
+          "email": "marianapipolo@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "marianapipolo-blip",
+              "submission": "submit/2026-09-03T18-04-27Z-1d2de96",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-marianapipolo-blip/commit/1d2de960e15a321d794a8974cdbb04a0aaee1fc2",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-marianapipolo-blip/releases/tag/submit%2F2026-09-03T18-04-27Z-1d2de96",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-marianapipolo-blip/compare/27f4b0ea742c01d3e8cad69b7eff3f8c5cadabc8...1d2de960e15a321d794a8974cdbb04a0aaee1fc2",
+              "datetime": "2026-09-03T18:04:06Z",
+              "graded_at": "2026-09-03T18:04:55Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "marianapipolo-blip",
+                "id": 318268351
+              }
+            }
+          ]
+        },
+        {
+          "owner": "joao2-cell",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "joao2-cell",
+              "submission": "submit/2026-09-03T18-04-21Z-7a0524f",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-joao2-cell/commit/7a0524f0a9c56a8770ba396d1981134b6018ff0e",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-joao2-cell/releases/tag/submit%2F2026-09-03T18-04-21Z-7a0524f",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-joao2-cell/compare/dec1e0c07f38a63a337946dfc4632f578bf3c33e...7a0524f0a9c56a8770ba396d1981134b6018ff0e",
+              "datetime": "2026-09-03T18:04:03Z",
+              "graded_at": "2026-09-03T18:04:50Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "joao2-cell",
+                "id": 318268584
+              }
+            }
+          ]
+        },
+        {
+          "owner": "shengyanhuang1711",
+          "email": "yanhuang@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "shengyanhuang1711",
+              "submission": "submit/2026-09-01T13-41-56Z-556fc20",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-shengyanhuang1711/commit/556fc20a70da8d3f4d5467b5a97b1af1fc0b24ed",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-shengyanhuang1711/releases/tag/submit%2F2026-09-01T13-41-56Z-556fc20",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-shengyanhuang1711/compare/c4386ea6ec6950ad3b28ccadcc665eb9edc50c04...556fc20a70da8d3f4d5467b5a97b1af1fc0b24ed",
+              "datetime": "2026-09-01T13:41:42Z",
+              "graded_at": "2026-09-01T13:42:23Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "shengyanhuang1711",
+                "id": 318268596
+              }
+            }
+          ]
+        },
+        {
+          "owner": "wandermerces-bot",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "wandermerces-bot",
+              "submission": "submit/2026-08-27T18-04-37Z-3ebab62",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-wandermerces-bot/commit/3ebab62af4348fc0ed75e9621166e3127798e74f",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-wandermerces-bot/releases/tag/submit%2F2026-08-27T18-04-37Z-3ebab62",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-wandermerces-bot/compare/67ed02b6c9176f0c5b490bea568f5d3d6d4a98b2...3ebab62af4348fc0ed75e9621166e3127798e74f",
+              "datetime": "2026-08-27T18:04:22Z",
+              "graded_at": "2026-08-27T18:05:03Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "wandermerces-bot",
+                "id": 318268663
+              }
+            }
+          ]
+        },
+        {
+          "owner": "pedrohmora1s",
+          "email": "pedro.morais@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "pedrohmora1s",
+              "submission": "submit/2026-08-27T01-45-14Z-ea4b1d8",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-pedrohmora1s/commit/ea4b1d8cf546831309cfbb301bfc827de84bf348",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-pedrohmora1s/releases/tag/submit%2F2026-08-27T01-45-14Z-ea4b1d8",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-pedrohmora1s/compare/24d9ba476fc7129a6ec1f338e315be4a60837849...ea4b1d8cf546831309cfbb301bfc827de84bf348",
+              "datetime": "2026-08-27T01:44:52Z",
+              "graded_at": "2026-08-27T01:45:46Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "pedrohmora1s",
+                "id": 318268725
+              }
+            }
+          ]
+        },
+        {
+          "owner": "anacags-alt",
+          "email": "anacags@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "anacags-alt",
+              "submission": "submit/2026-08-30T18-23-25Z-cbd2084",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-anacags-alt/commit/cbd208494285b330fef37367cdb1f90add2ccd0a",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-anacags-alt/releases/tag/submit%2F2026-08-30T18-23-25Z-cbd2084",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-anacags-alt/compare/4bd921948b499026e74696ee318003443ea87d6e...cbd208494285b330fef37367cdb1f90add2ccd0a",
+              "datetime": "2026-08-30T18:23:05Z",
+              "graded_at": "2026-08-30T18:23:52Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "anacags-alt",
+                "id": 318268783
+              }
+            }
+          ]
+        },
+        {
+          "owner": "raulmartinsbessan-byte",
+          "email": "raulmartinsbessan@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "raulmartinsbessan-byte",
+              "submission": "submit/2026-08-26T20-40-26Z-c6d4380",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-raulmartinsbessan-byte/commit/c6d438077445ca59c4f03518bd250b16598c7633",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-raulmartinsbessan-byte/releases/tag/submit%2F2026-08-26T20-40-26Z-c6d4380",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-raulmartinsbessan-byte/compare/cbacdd25281c85e67e6122af37849053145e23fa...c6d438077445ca59c4f03518bd250b16598c7633",
+              "datetime": "2026-08-26T20:40:11Z",
+              "graded_at": "2026-08-26T20:41:13Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "raulmartinsbessan-byte",
+                "id": 318269770
+              }
+            }
+          ]
+        },
+        {
+          "owner": "matheusfahl-ctrl",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "matheusfahl-ctrl",
+              "submission": "submit/2026-09-01T13-58-19Z-888df13",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-matheusfahl-ctrl/commit/888df1313977b61e405b295df5cf33f329efc839",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-matheusfahl-ctrl/releases/tag/submit%2F2026-09-01T13-58-19Z-888df13",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-matheusfahl-ctrl/compare/5b8ade08454d1a40f6f988efb3092abe61a8d6f1...888df1313977b61e405b295df5cf33f329efc839",
+              "datetime": "2026-09-01T13:58:03Z",
+              "graded_at": "2026-09-01T13:58:50Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "matheusfahl-ctrl",
+                "id": 318269779
+              }
+            }
+          ]
+        },
+        {
+          "owner": "pedrocanales-svg",
+          "email": "pedrocanales@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "pedrocanales-svg",
+              "submission": "submit/2026-08-29T15-01-36Z-c15354c",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-pedrocanales-svg/commit/c15354cc0c93b555bbc7107f259b0f8aa158b41a",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-pedrocanales-svg/releases/tag/submit%2F2026-08-29T15-01-36Z-c15354c",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-pedrocanales-svg/compare/53b584c12af17c1ab91e120c3b0c71cb5d6018e7...c15354cc0c93b555bbc7107f259b0f8aa158b41a",
+              "datetime": "2026-08-29T15:01:22Z",
+              "graded_at": "2026-08-29T15:02:01Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "pedrocanales-svg",
+                "id": 318282608
+              }
+            }
+          ]
+        },
+        {
+          "owner": "sciarramellofelipe",
+          "email": "felipesciarramello@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "sciarramellofelipe",
+              "submission": "submit/2026-08-26T22-02-33Z-35fd9d8",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-sciarramellofelipe/commit/35fd9d8d8a9dc90b33e93da379dd6936928e0496",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-sciarramellofelipe/releases/tag/submit%2F2026-08-26T22-02-33Z-35fd9d8",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-sciarramellofelipe/compare/2116765d2e63ee0861ad507c96e0ca1291890c5b...35fd9d8d8a9dc90b33e93da379dd6936928e0496",
+              "datetime": "2026-08-26T22:02:06Z",
+              "graded_at": "2026-08-26T22:02:57Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "sciarramellofelipe",
+                "id": 318283661
+              }
+            }
+          ]
+        },
+        {
+          "owner": "laurafrancoso102",
+          "email": "laurafrancoso@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "laurafrancoso102",
+              "submission": "submit/2026-08-26T20-23-15Z-f996231",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-laurafrancoso102/commit/f99623117c965f48e8550eaa7f2d01f576287be2",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-laurafrancoso102/releases/tag/submit%2F2026-08-26T20-23-15Z-f996231",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-laurafrancoso102/compare/d3d51caed357b81214029a06c45b8d16a0763cc6...f99623117c965f48e8550eaa7f2d01f576287be2",
+              "datetime": "2026-08-26T20:23:01Z",
+              "graded_at": "2026-08-26T20:23:45Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "laurafrancoso102",
+                "id": 318321606
+              }
+            }
+          ]
+        },
+        {
+          "owner": "LeonardoAPrimo",
+          "email": "leonardo.primo@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "leonardoaprimo",
+              "submission": "submit/2026-09-01T03-19-45Z-cafa13b",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-leonardoaprimo/commit/cafa13b4d66f0a255f3c4f8278fd2e943e8d21c1",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-leonardoaprimo/releases/tag/submit%2F2026-09-01T03-19-45Z-cafa13b",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-leonardoaprimo/compare/4f85803f9fe64ba3e6289eba54082fed031a8cb3...cafa13b4d66f0a255f3c4f8278fd2e943e8d21c1",
+              "datetime": "2026-09-01T03:19:32Z",
+              "graded_at": "2026-09-01T03:20:11Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "LeonardoAPrimo",
+                "id": 320666817
+              }
+            }
+          ]
+        },
+        {
+          "owner": "menotti",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "menotti",
+              "submission": "submit/2026-08-24T18-27-47Z-e9d10a9",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-menotti/commit/e9d10a951eab8e386f705e322c2708abff717d89",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-menotti/releases/tag/submit%2F2026-08-24T18-27-47Z-e9d10a9",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-hello-verilog-menotti/compare/d12b121e3eac6449c99794e23f3c6540f9c55333...e9d10a951eab8e386f705e322c2708abff717d89",
+              "datetime": "2026-08-24T18:27:31Z",
+              "graded_at": "2026-08-24T18:28:12Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "setup",
+                  "passed": true,
+                  "score": 0,
+                  "max-score": 0
+                },
+                {
+                  "test-name": "Test hello",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "menotti",
+                "id": 1031350
+              }
+            }
+          ]
+        }
+      ],
+      "collected_at": "2026-09-04T13:44:41Z",
+      "detected": []
     }
   }
 }
