@@ -165,6 +165,36 @@
       "grading": {
         "mode": "off"
       }
+    },
+    {
+      "slug": "risc-v-alu",
+      "name": "RISC-V ALU",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "riscv-alu",
+        "branch": "main"
+      },
+      "max_group_size": 8,
+      "team_formation": "student",
+      "runtime": {
+        "apt": [
+          "iverilog"
+        ]
+      },
+      "tests": [
+        {
+          "name": "Test ALU",
+          "type": "run",
+          "run": "./run.sh",
+          "points": 10,
+          "setup": "./setup.sh"
+        }
+      ]
     }
   ]
 }
