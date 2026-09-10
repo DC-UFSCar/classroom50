@@ -121,7 +121,7 @@
     },
     {
       "slug": "rf-test-bench",
-      "name": "RF Test Bench",
+      "name": "Sim 02 RF Test Bench",
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
