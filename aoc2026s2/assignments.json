@@ -194,6 +194,20 @@
           "setup": "./setup.sh"
         }
       ]
+    },
+    {
+      "slug": "risc-v-alu-tb",
+      "name": "Lab 04 RISC-V ALU test bench",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": false,
+      "empty_repo": true,
+      "max_group_size": 8,
+      "team_formation": "student",
+      "grading": {
+        "mode": "manual",
+        "max_points": 10
+      }
     }
   ]
 }
