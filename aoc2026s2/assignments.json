@@ -167,7 +167,7 @@
     },
     {
       "slug": "risc-v-alu",
-      "name": "RISC-V ALU",
+      "name": "Sim 04 RISC-V ALU",
       "mode": "team",
       "autograder": "default",
       "feedback_pr": true,
