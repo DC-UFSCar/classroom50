@@ -44,7 +44,7 @@
     },
     {
       "slug": "registers-memory",
-      "name": "Registers & Memory",
+      "name": "Sim 01 Registers & Memory",
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
