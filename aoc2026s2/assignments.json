@@ -148,7 +148,7 @@
     },
     {
       "slug": "decode-game",
-      "name": "Decode Game",
+      "name": "Lab 02 Decode Game",
       "mode": "group",
       "autograder": "default",
       "feedback_pr": true,
