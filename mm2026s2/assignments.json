@@ -78,7 +78,7 @@
     },
     {
       "slug": "strings-asm",
-      "name": "Strings ASM",
+      "name": "Sim 02 Strings ASM",
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
