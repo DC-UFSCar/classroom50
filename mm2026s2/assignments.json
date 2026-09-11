@@ -44,7 +44,7 @@
     },
     {
       "slug": "hello-verilog",
-      "name": "Hello Verilog",
+      "name": "Sim 01 Hello Verilog",
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
