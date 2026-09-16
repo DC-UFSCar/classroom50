@@ -1635,6 +1635,38 @@
               "classroom": "aoc2026s2",
               "assignment_type": "individual",
               "owner": "silvestrechiarinettoufscar",
+              "submission": "submit/2026-09-09T18-11-06Z-4a778e9",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-silvestrechiarinettoufscar/commit/4a778e91fb64d5abb474f521e1f2914412ec30e5",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-silvestrechiarinettoufscar/releases/tag/submit%2F2026-09-09T18-11-06Z-4a778e9",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-silvestrechiarinettoufscar/compare/c9f07e20a9a11631e4d7fe230d9ae8136d611d3d...4a778e91fb64d5abb474f521e1f2914412ec30e5",
+              "datetime": "2026-09-09T18:10:45Z",
+              "graded_at": "2026-09-09T18:11:41Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "silvestrechiarinettoufscar",
+                "id": 316797313
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "silvestrechiarinettoufscar",
               "submission": "submit/2026-08-26T01-52-39Z-1ce302a",
               "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-silvestrechiarinettoufscar/commit/1ce302a14062eacd9e3ab00c3dd627201499b51f",
               "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-silvestrechiarinettoufscar/releases/tag/submit%2F2026-08-26T01-52-39Z-1ce302a",
@@ -1738,10 +1770,350 @@
               }
             }
           ]
+        },
+        {
+          "owner": "Tho-hen",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "tho-hen",
+              "submission": "submit/2026-09-10T18-15-25Z-c01710c",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-tho-hen/commit/c01710c1feae29fa558a6d0b3e27ed9b0d0d32d1",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-tho-hen/releases/tag/submit%2F2026-09-10T18-15-25Z-c01710c",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-tho-hen/compare/8266df60b371ba8cf6eacc5e759defe5d7a853dc...c01710c1feae29fa558a6d0b3e27ed9b0d0d32d1",
+              "datetime": "2026-09-10T18:15:03Z",
+              "graded_at": "2026-09-10T18:15:53Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "Tho-hen",
+                "id": 185139816
+              }
+            }
+          ]
+        },
+        {
+          "owner": "LeonardoCensi",
+          "email": "leonardo.faria@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "leonardocensi",
+              "submission": "submit/2026-09-09T18-08-53Z-65beb9b",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-leonardocensi/commit/65beb9bf44b79c45670975f0046faf6d240c8989",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-leonardocensi/releases/tag/submit%2F2026-09-09T18-08-53Z-65beb9b",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-leonardocensi/compare/393a838db05afcb1c1b115cc2bf4cb3b9b339368...65beb9bf44b79c45670975f0046faf6d240c8989",
+              "datetime": "2026-09-09T18:08:36Z",
+              "graded_at": "2026-09-09T18:09:20Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "LeonardoCensi",
+                "id": 190556506
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "leonardocensi",
+              "submission": "submit/2026-09-09T18-02-59Z-3f229ad",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-leonardocensi/commit/3f229ad561d1922674e810be9a0f827fe7409338",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-leonardocensi/releases/tag/submit%2F2026-09-09T18-02-59Z-3f229ad",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-leonardocensi/compare/393a838db05afcb1c1b115cc2bf4cb3b9b339368...3f229ad561d1922674e810be9a0f827fe7409338",
+              "datetime": "2026-09-09T18:02:41Z",
+              "graded_at": "2026-09-09T18:04:19Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "LeonardoCensi",
+                "id": 190556506
+              }
+            }
+          ]
+        },
+        {
+          "owner": "khrizzylee2",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "khrizzylee2",
+              "submission": "submit/2026-09-14T17-01-05Z-09dfc70",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-khrizzylee2/commit/09dfc70c78cec4d6b8198a722cc4bcaaf292872e",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-khrizzylee2/releases/tag/submit%2F2026-09-14T17-01-05Z-09dfc70",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-khrizzylee2/compare/daa88b671a63db3da64e5ebe399b9f12fb67f9c0...09dfc70c78cec4d6b8198a722cc4bcaaf292872e",
+              "datetime": "2026-09-14T17:00:33Z",
+              "graded_at": "2026-09-14T17:01:34Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "khrizzylee2",
+                "id": 195389684
+              }
+            }
+          ]
+        },
+        {
+          "owner": "jp-paschoal",
+          "email": "joao.paschoal@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "jp-paschoal",
+              "submission": "submit/2026-09-13T23-08-53Z-9d99fff",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-jp-paschoal/commit/9d99fff5f4bc77c8535590a31c32d1471b47e403",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-jp-paschoal/releases/tag/submit%2F2026-09-13T23-08-53Z-9d99fff",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-jp-paschoal/compare/0a97a3729e56465b79bfc10fed3bb7ef637f99b2...9d99fff5f4bc77c8535590a31c32d1471b47e403",
+              "datetime": "2026-09-13T23:08:37Z",
+              "graded_at": "2026-09-13T23:09:23Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "jp-paschoal",
+                "id": 202676731
+              }
+            }
+          ]
+        },
+        {
+          "owner": "joaoasma",
+          "email": "jasmartins@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "joaoasma",
+              "submission": "submit/2026-09-06T10-26-08Z-1848902",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-joaoasma/commit/1848902d71c1c4a67bd45f0d0de3556078468b11",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-joaoasma/releases/tag/submit%2F2026-09-06T10-26-08Z-1848902",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-joaoasma/compare/950c51a2d0a58d613d010dd836403e9c06537d9e...1848902d71c1c4a67bd45f0d0de3556078468b11",
+              "datetime": "2026-09-06T10:25:17Z",
+              "graded_at": "2026-09-06T10:26:42Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "joaoasma",
+                "id": 211520784
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "joaoasma",
+              "submission": "submit/2026-09-06T09-58-48Z-1dbd2c0",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-joaoasma/commit/1dbd2c00edfed9f303a6c05d945c9508f8294d06",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-joaoasma/releases/tag/submit%2F2026-09-06T09-58-48Z-1dbd2c0",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-joaoasma/compare/950c51a2d0a58d613d010dd836403e9c06537d9e...1dbd2c00edfed9f303a6c05d945c9508f8294d06",
+              "datetime": "2026-09-06T09:58:24Z",
+              "graded_at": "2026-09-06T09:59:16Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "joaoasma",
+                "id": 211520784
+              }
+            }
+          ]
+        },
+        {
+          "owner": "renansiqueira-dev",
+          "email": "renansiqueira@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "renansiqueira-dev",
+              "submission": "submit/2026-09-08T11-39-17Z-0033d2e",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-renansiqueira-dev/commit/0033d2e1b77b2d4aff133a0b5cadfcf1ab8f5e2d",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-renansiqueira-dev/releases/tag/submit%2F2026-09-08T11-39-17Z-0033d2e",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-renansiqueira-dev/compare/095f76cbd2c3f8e738251a5e3057ba0e3fe64f50...0033d2e1b77b2d4aff133a0b5cadfcf1ab8f5e2d",
+              "datetime": "2026-09-08T11:39:00Z",
+              "graded_at": "2026-09-08T11:39:45Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "renansiqueira-dev",
+                "id": 268931211
+              }
+            }
+          ]
+        },
+        {
+          "owner": "eduardosantos712",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "eduardosantos712",
+              "submission": "submit/2026-09-15T12-07-27Z-b8ee258",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-eduardosantos712/commit/b8ee258326e4a3a67e8dee233544b5539021c451",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-eduardosantos712/releases/tag/submit%2F2026-09-15T12-07-27Z-b8ee258",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-hello-asm-eduardosantos712/compare/03ef6ed5f94e43f784937cbb79521da05e409c2a...b8ee258326e4a3a67e8dee233544b5539021c451",
+              "datetime": "2026-09-15T12:07:08Z",
+              "graded_at": "2026-09-15T12:08:10Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Exit code",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Print hello",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "eduardosantos712",
+                "id": 269561589
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-09-04T14:05:04Z",
-      "detected": []
+      "collected_at": "2026-09-16T11:52:03Z",
+      "detected": [
+        {
+          "owner": "GabiVF",
+          "count": 1,
+          "latest_datetime": "2026-09-09T17:49:53Z",
+          "kind": "commit"
+        },
+        {
+          "owner": "isaacrondanine",
+          "count": 1,
+          "latest_datetime": "2026-09-09T17:47:12Z",
+          "kind": "commit"
+        }
+      ]
     },
     "registers-memory": {
       "type": "individual",
