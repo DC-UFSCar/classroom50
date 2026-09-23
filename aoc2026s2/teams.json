@@ -1,0 +1,161 @@
+{
+  "schema": "classroom50/teams/v1",
+  "assignments": {
+    "risc-v-alu-tb": {
+      "teams": [
+        {
+          "slug": "classroom50-group-288410a951d81b74-1",
+          "id": 19450935,
+          "name": "Grupo A5",
+          "members": [
+            "joaoasma",
+            "josewinterle",
+            "ggcisabela",
+            "Beatriz-Kwok",
+            "Luiza650",
+            "felipebp14-207"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-2",
+          "id": 19526868,
+          "members": [
+            "gabrielhenrique-c"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-3",
+          "id": 19527627,
+          "name": "Grupo A1",
+          "members": [
+            "CalvinOgata",
+            "arthurdfd",
+            "Pedro-Junqueira",
+            "Tho-hen",
+            "jp-paschoal",
+            "GabiVF",
+            "MiguelLandi"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-4",
+          "id": 19533586,
+          "name": "Grupo A3",
+          "members": [
+            "vinicius-daros",
+            "LuisFelipeRVenancio",
+            "vtorlima",
+            "isaacrondanine",
+            "guiLHERMAO22"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-5",
+          "id": 19533590,
+          "name": "Grupo A2",
+          "members": [
+            "gabrielhenrique-c",
+            "pmendes5",
+            "ggoulart-pro",
+            "JoaoPchagas491",
+            "ThiagoBrasilUFSCar",
+            "danyykk",
+            "Rodrigoteixeira436"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-6",
+          "id": 19533600,
+          "name": "Grupo Z0 (Forever alone)",
+          "members": [
+            "menotti"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-7",
+          "id": 19533661,
+          "name": "Grupo A4",
+          "members": [
+            "1k3nj1",
+            "Iago3457",
+            "LeonardoCensi",
+            "khrizzylee2",
+            "sevla7",
+            "silvestrechiarinettoufscar",
+            "brunospegiorinmgomes"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-8",
+          "id": 19537122,
+          "name": "Grupo B3",
+          "members": [
+            "Bnccrs",
+            "100-nick",
+            "eduardosantos712",
+            "Guilhermeps29",
+            "henriqueastafieff-ufscar",
+            "joao-ufscar3"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-9",
+          "id": 19548807,
+          "name": "B2",
+          "members": [
+            "gdefaria",
+            "itzxw",
+            "gabrielfranco9",
+            "vitorferracciu"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-10",
+          "id": 19550211,
+          "name": "Grupo B5",
+          "members": [
+            "murilo-destaole",
+            "olelis777"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-11",
+          "id": 19550060,
+          "name": "Grupo B1",
+          "members": [
+            "Tomiokaka",
+            "castro-fer",
+            "joao-terra-png",
+            "nathalymdj",
+            "miguelrossini19",
+            "leobluex"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-288410a951d81b74-12",
+          "id": 19550128,
+          "name": "Grupo B4",
+          "members": [
+            "Steatsos",
+            "FavaDaniel",
+            "murilovalente-exe",
+            "DaviFilip",
+            "PedroHenriqueC26"
+          ],
+          "formation": "student"
+        }
+      ]
+    }
+  }
+}
