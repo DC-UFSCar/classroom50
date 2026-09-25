@@ -566,12 +566,30 @@
     "trabalho-1-up1": {
       "type": "group",
       "entries": [],
-      "collected_at": "2026-09-01T14:19:11Z",
+      "collected_at": "2026-09-25T14:16:42Z",
       "detected": [
         {
+          "owner": "anacags-alt",
+          "count": 12,
+          "latest_datetime": "2026-09-12T02:10:02Z",
+          "kind": "commit"
+        },
+        {
           "owner": "ivantamura",
-          "count": 1,
-          "latest_datetime": "2026-09-01T14:08:30Z",
+          "count": 19,
+          "latest_datetime": "2026-09-16T02:16:13Z",
+          "kind": "commit"
+        },
+        {
+          "owner": "raulmartinsbessan-byte",
+          "count": 16,
+          "latest_datetime": "2026-09-08T17:18:28Z",
+          "kind": "commit"
+        },
+        {
+          "owner": "rlfraguasUFSCar",
+          "count": 24,
+          "latest_datetime": "2026-09-11T18:06:22Z",
           "kind": "commit"
         }
       ]
