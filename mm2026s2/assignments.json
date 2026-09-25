@@ -155,6 +155,19 @@
       "grading": {
         "mode": "off"
       }
+    },
+    {
+      "slug": "trabalho-3-arm",
+      "name": "Trabalho 3 (ARM)",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": false,
+      "empty_repo": true,
+      "max_group_size": 8,
+      "team_formation": "student",
+      "grading": {
+        "mode": "off"
+      }
     }
   ]
 }
