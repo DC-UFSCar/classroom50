@@ -1166,6 +1166,37 @@
       ],
       "collected_at": "2026-09-25T13:04:31Z",
       "detected": []
+    },
+    "trabalho-2-mmio": {
+      "type": "group",
+      "entries": [],
+      "collected_at": "2026-09-25T14:23:40Z",
+      "detected": [
+        {
+          "owner": "anacags-alt",
+          "count": 13,
+          "latest_datetime": "2026-09-22T00:23:15Z",
+          "kind": "commit"
+        },
+        {
+          "owner": "ivantamura",
+          "count": 12,
+          "latest_datetime": "2026-09-23T04:20:36Z",
+          "kind": "commit"
+        },
+        {
+          "owner": "raulmartinsbessan-byte",
+          "count": 20,
+          "latest_datetime": "2026-09-22T17:52:17Z",
+          "kind": "commit"
+        },
+        {
+          "owner": "rlfraguasUFSCar",
+          "count": 10,
+          "latest_datetime": "2026-09-22T06:52:14Z",
+          "kind": "commit"
+        }
+      ]
     }
   }
 }
