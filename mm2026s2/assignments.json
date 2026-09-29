@@ -171,7 +171,7 @@
     },
     {
       "slug": "strings-arm",
-      "name": "Sim 02 Strings ASM",
+      "name": "Sim 03 Strings ARM",
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
@@ -179,7 +179,7 @@
       "copy_topics": true,
       "template": {
         "owner": "DC-UFSCar",
-        "repo": "string-asm",
+        "repo": "string-arm",
         "branch": "main"
       },
       "runtime": {
