@@ -213,7 +213,7 @@
         {
           "slug": "classroom50-group-4f224b8d02e35579-7",
           "id": 19817395,
-          "name": "Grupo A2B",
+          "name": "Grupo A2B (era B)",
           "members": [
             "gabrielhenrique-c",
             "pmendes5",
@@ -238,7 +238,9 @@
           "id": 19817659,
           "name": "Grupo A1B (3 mosqueteiros)",
           "members": [
-            "arthurdfd"
+            "arthurdfd",
+            "jp-paschoal",
+            "MiguelLandi"
           ],
           "formation": "student"
         },
