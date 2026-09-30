@@ -140,6 +140,102 @@
           "formation": "student"
         }
       ]
+    },
+    "riscv-mono": {
+      "teams": [
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-1",
+          "id": 19817363,
+          "name": "Grupo A4A",
+          "members": [
+            "1k3nj1",
+            "Iago3457",
+            "khrizzylee2"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-2",
+          "id": 19817365,
+          "name": "Grupo A1A",
+          "members": [
+            "CalvinOgata"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-3",
+          "id": 19817377,
+          "name": "Grupo A3B",
+          "members": [
+            "vtorlima",
+            "renansiqueira-dev",
+            "guiLHERMAO22"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-4",
+          "id": 19817378,
+          "name": "Grupo A5A",
+          "members": [
+            "ggcisabela",
+            "Beatriz-Kwok",
+            "felipebp14-207"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-5",
+          "id": 19817388,
+          "name": "Grupo A4B (BJLS)",
+          "members": [
+            "LeonardoCensi",
+            "sevla7",
+            "silvestrechiarinettoufscar"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-6",
+          "id": 19817392,
+          "name": "Grupo A3A (att)",
+          "members": [
+            "vinicius-daros"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-7",
+          "id": 19817395,
+          "name": "Grupo B2(B)",
+          "members": [
+            "gabrielhenrique-c",
+            "JoaoPchagas491",
+            "Rodrigoteixeira436"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-8",
+          "id": 19817439,
+          "name": "Grupo A5B  - JJL",
+          "members": [
+            "joaoasma",
+            "josewinterle",
+            "Luiza650"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-9",
+          "id": 19817659,
+          "members": [
+            "arthurdfd"
+          ],
+          "formation": "student"
+        }
+      ]
     }
   }
 }
