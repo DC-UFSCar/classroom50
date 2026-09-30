@@ -159,7 +159,10 @@
           "id": 19817365,
           "name": "Grupo A1A",
           "members": [
-            "CalvinOgata"
+            "CalvinOgata",
+            "Pedro-Junqueira",
+            "Tho-hen",
+            "GabiVF"
           ],
           "formation": "student"
         },
@@ -192,7 +195,8 @@
           "members": [
             "LeonardoCensi",
             "sevla7",
-            "silvestrechiarinettoufscar"
+            "silvestrechiarinettoufscar",
+            "brunospegiorinmgomes"
           ],
           "formation": "student"
         },
@@ -201,14 +205,15 @@
           "id": 19817392,
           "name": "Grupo A3A (att)",
           "members": [
-            "vinicius-daros"
+            "vinicius-daros",
+            "LuisFelipeRVenancio"
           ],
           "formation": "student"
         },
         {
           "slug": "classroom50-group-4f224b8d02e35579-7",
           "id": 19817395,
-          "name": "Grupo B2(B)",
+          "name": "Grupo A2B",
           "members": [
             "gabrielhenrique-c",
             "pmendes5",
@@ -242,7 +247,9 @@
           "id": 19817671,
           "name": "Grupo A2A (Flip-Flopadores)",
           "members": [
-            "ggoulart-pro"
+            "ggoulart-pro",
+            "ThiagoBrasilUFSCar",
+            "danyykk"
           ],
           "formation": "student"
         }
