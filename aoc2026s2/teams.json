@@ -211,6 +211,7 @@
           "name": "Grupo B2(B)",
           "members": [
             "gabrielhenrique-c",
+            "pmendes5",
             "JoaoPchagas491",
             "Rodrigoteixeira436"
           ],
@@ -230,8 +231,18 @@
         {
           "slug": "classroom50-group-4f224b8d02e35579-9",
           "id": 19817659,
+          "name": "Grupo A1B (3 mosqueteiros)",
           "members": [
             "arthurdfd"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-4f224b8d02e35579-10",
+          "id": 19817671,
+          "name": "Grupo A2A (Flip-Flopadores)",
+          "members": [
+            "ggoulart-pro"
           ],
           "formation": "student"
         }
