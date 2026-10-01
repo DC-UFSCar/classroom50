@@ -8980,6 +8980,32 @@
               "classroom": "aoc2026s2",
               "assignment_type": "team",
               "owner": "group-1",
+              "submission": "submit/2026-09-30T18-53-31Z-331b014",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-1/commit/331b01420cf7930fe929bf889ba7c4425a2f7fea",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-1/releases/tag/submit%2F2026-09-30T18-53-31Z-331b014",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-1/compare/c459baa37308e9955a128afc013ade32ce0dc141...331b01420cf7930fe929bf889ba7c4425a2f7fea",
+              "datetime": "2026-09-30T18:53:10Z",
+              "graded_at": "2026-09-30T18:53:53Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "1k3nj1",
+                "id": 109699507
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-1",
               "submission": "submit/2026-09-30T18-34-10Z-265ba50",
               "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-1/commit/265ba503df77b91db0c337ac444fa99ff1e46f68",
               "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-1/releases/tag/submit%2F2026-09-30T18-34-10Z-265ba50",
@@ -9069,6 +9095,32 @@
               "classroom": "aoc2026s2",
               "assignment_type": "team",
               "owner": "group-3",
+              "submission": "submit/2026-10-01T05-59-27Z-703ec80",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-3/commit/703ec807aefafb5b890bf7edcac59718056c5481",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-3/releases/tag/submit%2F2026-10-01T05-59-27Z-703ec80",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-3/compare/febb91cf422505ea0051064aea53222d1bf541f3...703ec807aefafb5b890bf7edcac59718056c5481",
+              "datetime": "2026-10-01T05:59:06Z",
+              "graded_at": "2026-10-01T05:59:48Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "vtorlima",
+                "id": 205826417
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-3",
               "submission": "submit/2026-09-30T18-47-43Z-d511157",
               "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-3/commit/d511157590fb83982ba7f837a1d02a4e01665c98",
               "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-3/releases/tag/submit%2F2026-09-30T18-47-43Z-d511157",
@@ -9102,6 +9154,32 @@
           ],
           "team_slug": "classroom50-group-4f224b8d02e35579-5",
           "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-5",
+              "submission": "submit/2026-09-30T18-55-21Z-bf7594f",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-5/commit/bf7594f55c691c42a31cea254ca7ea82acba3de4",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-5/releases/tag/submit%2F2026-09-30T18-55-21Z-bf7594f",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-5/compare/1c179f8d0d69f1e9beb8dbc0024f52e4211b9c57...bf7594f55c691c42a31cea254ca7ea82acba3de4",
+              "datetime": "2026-09-30T18:55:09Z",
+              "graded_at": "2026-09-30T18:55:50Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "brunospegiorinmgomes",
+                "id": 318735599
+              }
+            },
             {
               "schema": "classroom50/result/v1",
               "classroom": "aoc2026s2",
@@ -9345,10 +9423,198 @@
               }
             }
           ]
+        },
+        {
+          "owner": "group-2",
+          "member_usernames": [
+            "calvinogata",
+            "gabivf",
+            "pedro-junqueira",
+            "tho-hen"
+          ],
+          "team_slug": "classroom50-group-4f224b8d02e35579-2",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-2",
+              "submission": "submit/2026-09-30T18-56-43Z-25f9fc8",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-2/commit/25f9fc84b0fd85e9cc2ac3a372bd61dc57e9f659",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-2/releases/tag/submit%2F2026-09-30T18-56-43Z-25f9fc8",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-2/compare/89679d57eb7a698193b62eefbfe31766c81755a5...25f9fc84b0fd85e9cc2ac3a372bd61dc57e9f659",
+              "datetime": "2026-09-30T18:56:25Z",
+              "graded_at": "2026-09-30T18:57:41Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "GabiVF",
+                "id": 206148388
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-4",
+          "member_usernames": [
+            "beatriz-kwok",
+            "felipebp14-207",
+            "ggcisabela"
+          ],
+          "team_slug": "classroom50-group-4f224b8d02e35579-4",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-4",
+              "submission": "submit/2026-09-30T18-51-22Z-6d1ff86",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-4/commit/6d1ff862ea3428b6c852d92a44f64f0d717fb53c",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-4/releases/tag/submit%2F2026-09-30T18-51-22Z-6d1ff86",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-4/compare/7d258f96d707eb6aee75007821dbaa40d18ad68b...6d1ff862ea3428b6c852d92a44f64f0d717fb53c",
+              "datetime": "2026-09-30T18:51:04Z",
+              "graded_at": "2026-09-30T18:51:52Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Beatriz-Kwok",
+                "id": 270635344
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-9",
+          "member_usernames": [
+            "arthurdfd",
+            "jp-paschoal",
+            "miguellandi"
+          ],
+          "team_slug": "classroom50-group-4f224b8d02e35579-9",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-9",
+              "submission": "submit/2026-09-30T18-55-54Z-e77c58d",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-9/commit/e77c58db6c7f7115f62b1597f5e26c5a1b4ecc79",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-9/releases/tag/submit%2F2026-09-30T18-55-54Z-e77c58d",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-9/compare/024058b8466343ef5f2de36dbdceb76dfd772139...e77c58db6c7f7115f62b1597f5e26c5a1b4ecc79",
+              "datetime": "2026-09-30T18:55:40Z",
+              "graded_at": "2026-09-30T18:56:34Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "MiguelLandi",
+                "id": 212248818
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-9",
+              "submission": "submit/2026-09-30T18-52-41Z-652afd7",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-9/commit/652afd7d5c26e3c5a5573c715884a2e791286785",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-9/releases/tag/submit%2F2026-09-30T18-52-41Z-652afd7",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-9/compare/024058b8466343ef5f2de36dbdceb76dfd772139...652afd7d5c26e3c5a5573c715884a2e791286785",
+              "datetime": "2026-09-30T18:52:22Z",
+              "graded_at": "2026-09-30T18:53:15Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "MiguelLandi",
+                "id": 212248818
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-21",
+          "member_usernames": [
+            "olelis777",
+            "pedro-testa-ptl",
+            "phbr13"
+          ],
+          "team_slug": "classroom50-group-4f224b8d02e35579-21",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-21",
+              "submission": "submit/2026-10-01T14-01-05Z-dbbcbd4",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-21/commit/dbbcbd45400e41e942702913394d8eb2a958e1b8",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-21/releases/tag/submit%2F2026-10-01T14-01-05Z-dbbcbd4",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-mono-group-21/compare/0bbc40901d2afd3f1430992fab9453dceee08b28...dbbcbd45400e41e942702913394d8eb2a958e1b8",
+              "datetime": "2026-10-01T14:00:50Z",
+              "graded_at": "2026-10-01T14:01:40Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "phbr13",
+                "id": 82122652
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-09-30T18:51:16Z",
-      "detected": []
+      "collected_at": "2026-10-01T14:11:18Z",
+      "detected": [
+        {
+          "owner": "group-17",
+          "count": 1,
+          "latest_datetime": "2026-10-01T14:10:33Z",
+          "kind": "commit",
+          "member_usernames": [
+            "bnccrs",
+            "henriqueastafieff-ufscar",
+            "joao-ufscar3"
+          ],
+          "team_slug": "classroom50-group-4f224b8d02e35579-17"
+        }
+      ]
     }
   }
 }
