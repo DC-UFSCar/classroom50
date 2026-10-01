@@ -277,6 +277,15 @@
           "formation": "student"
         },
         {
+          "slug": "classroom50-group-4f224b8d02e35579-14",
+          "id": 19832907,
+          "name": "Grupo B4A (Clube das Winx)",
+          "members": [
+            "DaviFilip"
+          ],
+          "formation": "student"
+        },
+        {
           "slug": "classroom50-group-4f224b8d02e35579-15",
           "id": 19831971,
           "name": "Grupo B2A (2 homens e meio)",
@@ -312,7 +321,8 @@
           "id": 19832066,
           "name": "Grupo B2B (bota grupo)",
           "members": [
-            "itzxw"
+            "itzxw",
+            "rodrigbruno"
           ],
           "formation": "student"
         },
