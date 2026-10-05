@@ -184,8 +184,9 @@
       },
       "runtime": {
         "apt": [
-          "gcc-riscv64-linux-gnu",
-          "binutils-riscv64-linux-gnu",
+          "gcc-arm-linux-gnueabihf",
+          "binutils-arm-linux-gnueabihf",
+          "qemu-user",
           "qemu-user",
           "qemu-user-static"
         ]
