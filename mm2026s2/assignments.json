@@ -220,7 +220,7 @@
       "feedback_pr": true,
       "no_autograder": true,
       "max_group_size": 7,
-      "team_formation": "teacher",
+      "team_formation": "student",
       "grading": {
         "mode": "off"
       }
