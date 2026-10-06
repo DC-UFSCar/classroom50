@@ -211,6 +211,19 @@
           "points": 4
         }
       ]
+    },
+    {
+      "slug": "trabalho-4-x86",
+      "name": "Trabalho 4 (x86)",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "max_group_size": 7,
+      "team_formation": "teacher",
+      "grading": {
+        "mode": "off"
+      }
     }
   ]
 }
