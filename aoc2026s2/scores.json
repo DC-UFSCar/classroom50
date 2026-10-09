@@ -9639,6 +9639,615 @@
       ],
       "collected_at": "2026-10-01T14:12:59Z",
       "detected": []
+    },
+    "risc-v-alu": {
+      "type": "team",
+      "entries": [
+        {
+          "owner": "group-1",
+          "member_usernames": [
+            "menotti"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-1",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-1",
+              "submission": "submit/2026-09-16T18-32-34Z-1c5155d",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-1/commit/1c5155df26c50edf8faf2529e3964d43f7305e9a",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-1/releases/tag/submit%2F2026-09-16T18-32-34Z-1c5155d",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-1/compare/0d0ca8a4ba83f307d34b6f037ae48bd863ebc404...1c5155df26c50edf8faf2529e3964d43f7305e9a",
+              "datetime": "2026-09-16T18:32:17Z",
+              "graded_at": "2026-09-16T18:32:57Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "menotti",
+                "id": 1031350
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-2",
+          "member_usernames": [
+            "arthurdfd",
+            "calvinogata",
+            "gabivf",
+            "jp-paschoal",
+            "miguellandi",
+            "pedro-junqueira",
+            "tho-hen"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-2",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-2",
+              "submission": "submit/2026-09-11T21-23-22Z-fc693d6",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-2/commit/fc693d6105b50d21b37eb9fb8a37a97dc5ee8fde",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-2/releases/tag/submit%2F2026-09-11T21-23-22Z-fc693d6",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-2/compare/937972899d169e6a0443ec415a8c9cdadd40728b...fc693d6105b50d21b37eb9fb8a37a97dc5ee8fde",
+              "datetime": "2026-09-11T21:23:00Z",
+              "graded_at": "2026-09-11T21:23:46Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "CalvinOgata",
+                "id": 78836622
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-3",
+          "member_usernames": [
+            "natanael-pastore"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-3",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-3",
+              "submission": "submit/2026-09-14T17-24-31Z-87b4d28",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-3/commit/87b4d28617e0925ba93ce7651fdc6e7c1ceb6187",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-3/releases/tag/submit%2F2026-09-14T17-24-31Z-87b4d28",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-3/compare/7966247e78872cc6b3b0505d85f6fdde71014f9c...87b4d28617e0925ba93ce7651fdc6e7c1ceb6187",
+              "datetime": "2026-09-14T17:24:02Z",
+              "graded_at": "2026-09-14T17:24:59Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "natanael-pastore",
+                "id": 327165704
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-3",
+              "submission": "submit/2026-09-14T17-20-47Z-c2d81dc",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-3/commit/c2d81dc0c9d2501f9eb864fb06186a65c4be216a",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-3/releases/tag/submit%2F2026-09-14T17-20-47Z-c2d81dc",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-3/compare/7966247e78872cc6b3b0505d85f6fdde71014f9c...c2d81dc0c9d2501f9eb864fb06186a65c4be216a",
+              "datetime": "2026-09-14T17:20:09Z",
+              "graded_at": "2026-09-14T17:21:19Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "natanael-pastore",
+                "id": 327165704
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-4",
+          "member_usernames": [
+            "1k3nj1",
+            "brunospegiorinmgomes",
+            "iago3457",
+            "khrizzylee2",
+            "leonardocensi",
+            "sevla7",
+            "silvestrechiarinettoufscar"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-4",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-4",
+              "submission": "submit/2026-09-16T18-41-57Z-3a33534",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-4/commit/3a33534e1208ab6e269e2dda9c318ac31946acd1",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-4/releases/tag/submit%2F2026-09-16T18-41-57Z-3a33534",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-4/compare/129d55a62cd388b912abe2c3d2c7b10394575bc5...3a33534e1208ab6e269e2dda9c318ac31946acd1",
+              "datetime": "2026-09-16T18:41:43Z",
+              "graded_at": "2026-09-16T18:42:18Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Iago3457",
+                "id": 186886611
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-5",
+          "member_usernames": [
+            "beatriz-kwok",
+            "felipebp14-207",
+            "ggcisabela",
+            "joaoasma",
+            "josewinterle",
+            "luiza650"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-5",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-5",
+              "submission": "submit/2026-09-18T21-30-18Z-04e15cb",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-5/commit/04e15cb222c8a4a70c601259c6c813460b22c204",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-5/releases/tag/submit%2F2026-09-18T21-30-18Z-04e15cb",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-5/compare/bba28c6719981da9381788bf69cf9d26e1517fa4...04e15cb222c8a4a70c601259c6c813460b22c204",
+              "datetime": "2026-09-18T21:30:04Z",
+              "graded_at": "2026-09-18T21:30:38Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Luiza650",
+                "id": 276625183
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-6",
+          "member_usernames": [
+            "gabrielosorio1918",
+            "guilhermao22",
+            "isaacrondanine",
+            "renansiqueira-dev",
+            "vinicius-daros",
+            "vtorlima"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-6",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-6",
+              "submission": "submit/2026-09-23T18-01-04Z-bd7e87d",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-6/commit/bd7e87d4ab1566529f4da15390fd63764e6b9235",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-6/releases/tag/submit%2F2026-09-23T18-01-04Z-bd7e87d",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-6/compare/47f2e84844058773016fcaf59985dcc932ccd142...bd7e87d4ab1566529f4da15390fd63764e6b9235",
+              "datetime": "2026-09-23T18:00:41Z",
+              "graded_at": "2026-09-23T18:01:29Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "vtorlima",
+                "id": 205826417
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-7",
+          "member_usernames": [
+            "danyykk",
+            "gabrielhenrique-c",
+            "ggoulart-pro",
+            "joaopchagas491",
+            "pmendes5",
+            "rodrigoteixeira436",
+            "thiagobrasilufscar"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-7",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-7",
+              "submission": "submit/2026-09-17T18-12-23Z-2239db2",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-7/commit/2239db29d21f33ccc6ba23cb1f52c7617d8c6ada",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-7/releases/tag/submit%2F2026-09-17T18-12-23Z-2239db2",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-7/compare/9aea5d0efd0b576784f3f82c5ca4180b2436a24e...2239db29d21f33ccc6ba23cb1f52c7617d8c6ada",
+              "datetime": "2026-09-17T18:11:54Z",
+              "graded_at": "2026-09-17T18:12:49Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "pmendes5",
+                "id": 244100774
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-7",
+              "submission": "submit/2026-09-17T15-32-43Z-df875a9",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-7/commit/df875a9b15ee65989e6e73f89505526e44a88085",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-7/releases/tag/submit%2F2026-09-17T15-32-43Z-df875a9",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-7/compare/9aea5d0efd0b576784f3f82c5ca4180b2436a24e...df875a9b15ee65989e6e73f89505526e44a88085",
+              "datetime": "2026-09-17T15:32:27Z",
+              "graded_at": "2026-09-17T15:33:17Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "pmendes5",
+                "id": 244100774
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-8",
+          "member_usernames": [
+            "100-nick",
+            "bnccrs",
+            "eduardosantos712",
+            "guilhermeps29",
+            "henriqueastafieff-ufscar",
+            "joao-ufscar3"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-8",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-8",
+              "submission": "submit/2026-10-08T03-02-07Z-8634529",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-8/commit/863452915f59a9344ee2fa7004f7859398b1150c",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-8/releases/tag/submit%2F2026-10-08T03-02-07Z-8634529",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-8/compare/d66c808298b39d6a3d396d8a6a0c3f618adae7e3...863452915f59a9344ee2fa7004f7859398b1150c",
+              "datetime": "2026-10-08T03:01:36Z",
+              "graded_at": "2026-10-08T03:02:32Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Guilhermeps29",
+                "id": 269995691
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-8",
+              "submission": "submit/2026-09-17T14-37-01Z-61b2822",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-8/commit/61b28224e6c370e3ae82334c68ffd06d3d7a359b",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-8/releases/tag/submit%2F2026-09-17T14-37-01Z-61b2822",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-8/compare/d66c808298b39d6a3d396d8a6a0c3f618adae7e3...61b28224e6c370e3ae82334c68ffd06d3d7a359b",
+              "datetime": "2026-09-17T14:36:43Z",
+              "graded_at": "2026-09-17T14:37:34Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "joao-ufscar3",
+                "id": 319255699
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-9",
+          "member_usernames": [
+            "davifilip",
+            "ddiogo-dot",
+            "favadaniel",
+            "luislima03",
+            "murilovalente-exe",
+            "pedrohenriquec26",
+            "steatsos"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-9",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-9",
+              "submission": "submit/2026-09-17T22-49-00Z-0d82088",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-9/commit/0d82088589a02dde248591fefa10967d7d88c9ba",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-9/releases/tag/submit%2F2026-09-17T22-49-00Z-0d82088",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-9/compare/b816fc7a97df68906d92b8566fc759e46eff82a0...0d82088589a02dde248591fefa10967d7d88c9ba",
+              "datetime": "2026-09-17T22:48:40Z",
+              "graded_at": "2026-09-17T22:49:22Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "DaviFilip",
+                "id": 269562746
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-9",
+              "submission": "submit/2026-09-17T14-51-44Z-58bab7c",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-9/commit/58bab7c0eba60d46122509cc2f868ac22fc7fef5",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-9/releases/tag/submit%2F2026-09-17T14-51-44Z-58bab7c",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-9/compare/b816fc7a97df68906d92b8566fc759e46eff82a0...58bab7c0eba60d46122509cc2f868ac22fc7fef5",
+              "datetime": "2026-09-17T14:51:00Z",
+              "graded_at": "2026-09-17T14:52:17Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "DaviFilip",
+                "id": 269562746
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-10",
+          "member_usernames": [
+            "murilo-destaole",
+            "olelis777",
+            "pedro-testa-ptl",
+            "phbr13"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-10",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-10",
+              "submission": "submit/2026-09-24T03-53-55Z-15b06eb",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-10/commit/15b06eb435c5e8193b12ec6722c20d187fded6f2",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-10/releases/tag/submit%2F2026-09-24T03-53-55Z-15b06eb",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-10/compare/689f65732b87f20d38a0c20e743b084c99e9a529...15b06eb435c5e8193b12ec6722c20d187fded6f2",
+              "datetime": "2026-09-24T03:53:44Z",
+              "graded_at": "2026-09-24T03:54:23Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "phbr13",
+                "id": 82122652
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-10",
+              "submission": "submit/2026-09-24T03-51-49Z-8a989e8",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-10/commit/8a989e8580cb2051a9961de76c7bfa17fa97e9f5",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-10/releases/tag/submit%2F2026-09-24T03-51-49Z-8a989e8",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-10/compare/689f65732b87f20d38a0c20e743b084c99e9a529...8a989e8580cb2051a9961de76c7bfa17fa97e9f5",
+              "datetime": "2026-09-24T03:51:34Z",
+              "graded_at": "2026-09-24T03:52:14Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "phbr13",
+                "id": 82122652
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-11",
+          "member_usernames": [
+            "arthurlinssz",
+            "gabrielfranco9",
+            "gdefaria",
+            "itzxw",
+            "rodrigbruno",
+            "vitorferracciu"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-11",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-11",
+              "submission": "submit/2026-09-17T14-38-08Z-26b048e",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-11/commit/26b048e608480dee933713d6c92c7d8cd0c89440",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-11/releases/tag/submit%2F2026-09-17T14-38-08Z-26b048e",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-11/compare/6342d8a08842aa11787c4676357c89100dd169cc...26b048e608480dee933713d6c92c7d8cd0c89440",
+              "datetime": "2026-09-17T14:37:50Z",
+              "graded_at": "2026-09-17T14:38:33Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "gabrielfranco9",
+                "id": 268926770
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-12",
+          "member_usernames": [
+            "castro-fer",
+            "joao-terra-png",
+            "leobluex",
+            "miguelrossini19",
+            "nathalymdj",
+            "tomiokaka"
+          ],
+          "team_slug": "classroom50-group-38cfb2c95ab87fd7-12",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-12",
+              "submission": "submit/2026-09-17T14-53-57Z-cee0e98",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-12/commit/cee0e9881d8994032456c468f2ec441a43d50e25",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-12/releases/tag/submit%2F2026-09-17T14-53-57Z-cee0e98",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-risc-v-alu-group-12/compare/2bed9330ed29e43077553852797482808d392e53...cee0e9881d8994032456c468f2ec441a43d50e25",
+              "datetime": "2026-09-17T14:53:41Z",
+              "graded_at": "2026-09-17T14:54:25Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test ALU",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "castro-fer",
+                "id": 129780150
+              }
+            }
+          ]
+        }
+      ],
+      "collected_at": "2026-10-09T14:36:59Z",
+      "detected": []
     }
   }
 }
