@@ -2375,6 +2375,12 @@
           "team_slug": "classroom50-group-2daa4b3e2ea49111-4"
         }
       ]
+    },
+    "strings-x86-64": {
+      "type": "individual",
+      "entries": [],
+      "collected_at": "2026-10-09T14:35:36Z",
+      "detected": []
     }
   }
 }
