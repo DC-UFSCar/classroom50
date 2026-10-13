@@ -355,6 +355,35 @@
           "setup": "./setup.sh"
         }
       ]
+    },
+    {
+      "slug": "riscv-mono",
+      "name": "Sim 05 RISC-V Monociclo",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "riscv-mono",
+        "branch": "main"
+      },
+      "max_group_size": 4,
+      "team_formation": "student",
+      "runtime": {
+        "apt": [
+          "iverilog"
+        ]
+      },
+      "tests": [
+        {
+          "name": "Fibonacci",
+          "type": "run",
+          "run": "./run.sh",
+          "points": 10
+        }
+      ]
     }
   ]
 }
