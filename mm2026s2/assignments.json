@@ -358,7 +358,7 @@
     },
     {
       "slug": "riscv-mono",
-      "name": "Sim 05 RISC-V Monociclo",
+      "name": "Sim 08 RISC-V Monociclo",
       "mode": "team",
       "autograder": "default",
       "feedback_pr": true,
@@ -369,7 +369,7 @@
         "repo": "riscv-mono",
         "branch": "main"
       },
-      "max_group_size": 4,
+      "max_group_size": 9,
       "team_formation": "student",
       "runtime": {
         "apt": [
