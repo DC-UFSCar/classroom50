@@ -2378,8 +2378,97 @@
     },
     "strings-x86-64": {
       "type": "individual",
-      "entries": [],
-      "collected_at": "2026-10-09T14:35:36Z",
+      "entries": [
+        {
+          "owner": "wandermerces-bot",
+          "email": "wandermerces@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "wandermerces-bot",
+              "submission": "submit/2026-10-13T01-25-46Z-ed7e4a5",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-x86-64-wandermerces-bot/commit/ed7e4a51912bd372d28da2dd63903e35f831a4e3",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-x86-64-wandermerces-bot/releases/tag/submit%2F2026-10-13T01-25-46Z-ed7e4a5",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-x86-64-wandermerces-bot/compare/e43bc7d0f6fee3afb908439062926ab2b0822282...ed7e4a51912bd372d28da2dd63903e35f831a4e3",
+              "datetime": "2026-10-13T01:25:10Z",
+              "graded_at": "2026-10-13T01:26:06Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test invert",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "wandermerces-bot",
+                "id": 318268663
+              }
+            }
+          ]
+        },
+        {
+          "owner": "raulmartinsbessan-byte",
+          "email": "raulmartinsbessan@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "raulmartinsbessan-byte",
+              "submission": "submit/2026-10-10T00-06-40Z-1d78c00",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-x86-64-raulmartinsbessan-byte/commit/1d78c001b8a9b56cf839d034321612de1bd2c504",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-x86-64-raulmartinsbessan-byte/releases/tag/submit%2F2026-10-10T00-06-40Z-1d78c00",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-x86-64-raulmartinsbessan-byte/compare/376396a0b56d1773b5c28113cfd239e682e4b358...1d78c001b8a9b56cf839d034321612de1bd2c504",
+              "datetime": "2026-10-10T00:06:25Z",
+              "graded_at": "2026-10-10T00:07:00Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test invert",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "raulmartinsbessan-byte",
+                "id": 318269770
+              }
+            }
+          ]
+        }
+      ],
+      "collected_at": "2026-10-13T19:08:45Z",
       "detected": []
     }
   }
