@@ -58,6 +58,63 @@
           "formation": "student"
         }
       ]
+    },
+    "trabalho-3-arm": {
+      "teams": [
+        {
+          "slug": "classroom50-group-2daa4b3e2ea49111-1",
+          "id": 19736817,
+          "name": "Grupo 3",
+          "members": [
+            "julio-estudante",
+            "gabrielgasqui-beep",
+            "shengyanhuang1711",
+            "raulmartinsbessan-byte",
+            "laurafrancoso102"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-2daa4b3e2ea49111-2",
+          "id": 19787865,
+          "name": "Grupo 2",
+          "members": [
+            "thiobon",
+            "NlightXz",
+            "joao2-cell",
+            "wandermerces-bot",
+            "anacags-alt",
+            "lucasjro-svg"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-2daa4b3e2ea49111-3",
+          "id": 19854900,
+          "name": "Grupo 3",
+          "members": [
+            "gustavoarduca-source",
+            "M4th-e",
+            "rlfraguasUFSCar",
+            "pedrohmora1s",
+            "pedrocanales-svg",
+            "sciarramellofelipe"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-2daa4b3e2ea49111-4",
+          "id": 19927503,
+          "members": [
+            "AnaBoccaletti",
+            "marianapipolo-blip",
+            "matheusfahl-ctrl",
+            "LeonardoAPrimo",
+            "ivantamura"
+          ],
+          "formation": "student"
+        }
+      ]
     }
   }
 }
