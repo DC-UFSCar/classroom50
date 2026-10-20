@@ -3145,6 +3145,70 @@
       ],
       "collected_at": "2026-10-13T19:09:45Z",
       "detected": []
+    },
+    "trabalho-4-x86": {
+      "type": "team",
+      "entries": [],
+      "collected_at": "2026-10-20T13:34:02Z",
+      "detected": [
+        {
+          "owner": "group-1",
+          "count": 5,
+          "latest_datetime": "2026-10-20T12:14:09Z",
+          "kind": "commit",
+          "member_usernames": [
+            "anaboccaletti",
+            "ivantamura",
+            "leonardoaprimo",
+            "marianapipolo-blip",
+            "matheusfahl-ctrl"
+          ],
+          "team_slug": "classroom50-group-c97915861692a629-1"
+        },
+        {
+          "owner": "group-2",
+          "count": 14,
+          "latest_datetime": "2026-10-14T18:31:48Z",
+          "kind": "commit",
+          "member_usernames": [
+            "gabrielgasqui-beep",
+            "julio-estudante",
+            "laurafrancoso102",
+            "raulmartinsbessan-byte",
+            "shengyanhuang1711"
+          ],
+          "team_slug": "classroom50-group-c97915861692a629-2"
+        },
+        {
+          "owner": "group-3",
+          "count": 14,
+          "latest_datetime": "2026-10-20T02:14:32Z",
+          "kind": "commit",
+          "member_usernames": [
+            "gustavoarduca-source",
+            "m4th-e",
+            "pedrocanales-svg",
+            "pedrohmora1s",
+            "rlfraguasufscar",
+            "sciarramellofelipe"
+          ],
+          "team_slug": "classroom50-group-c97915861692a629-3"
+        },
+        {
+          "owner": "group-4",
+          "count": 5,
+          "latest_datetime": "2026-10-20T02:17:48Z",
+          "kind": "commit",
+          "member_usernames": [
+            "anacags-alt",
+            "joao2-cell",
+            "nlightxz",
+            "thiobon",
+            "wandermerces-bot"
+          ],
+          "team_slug": "classroom50-group-c97915861692a629-4"
+        }
+      ]
     }
   }
 }
