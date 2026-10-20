@@ -1,0 +1,62 @@
+{
+  "schema": "classroom50/teams/v1",
+  "assignments": {
+    "trabalho-4-x86": {
+      "teams": [
+        {
+          "slug": "classroom50-group-c97915861692a629-1",
+          "id": 19938953,
+          "members": [
+            "AnaBoccaletti",
+            "marianapipolo-blip",
+            "matheusfahl-ctrl",
+            "LeonardoAPrimo",
+            "ivantamura"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-c97915861692a629-2",
+          "id": 19952853,
+          "name": "Grupo 3",
+          "members": [
+            "julio-estudante",
+            "gabrielgasqui-beep",
+            "shengyanhuang1711",
+            "raulmartinsbessan-byte",
+            "laurafrancoso102"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-c97915861692a629-3",
+          "id": 20140695,
+          "name": "Grupo 1",
+          "members": [
+            "gustavoarduca-source",
+            "M4th-e",
+            "rlfraguasUFSCar",
+            "pedrohmora1s",
+            "pedrocanales-svg",
+            "sciarramellofelipe"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-c97915861692a629-4",
+          "id": 20173175,
+          "name": "Grupo 2",
+          "members": [
+            "thiobon",
+            "NlightXz",
+            "joao2-cell",
+            "wandermerces-bot",
+            "anacags-alt",
+            "lucasjro-svg"
+          ],
+          "formation": "student"
+        }
+      ]
+    }
+  }
+}
