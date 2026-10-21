@@ -381,8 +381,36 @@
         {
           "slug": "classroom50-group-ef63d9e1c2ff1b62-4",
           "id": 20240099,
+          "name": "Bancada A2B",
           "members": [
             "pmendes5"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-5",
+          "id": 20240100,
+          "name": "Bancada A4A",
+          "members": [
+            "1k3nj1"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-6",
+          "id": 20240105,
+          "name": "Bancada A4B",
+          "members": [
+            "LeonardoCensi"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-7",
+          "id": 20240106,
+          "name": "Bancada A1B",
+          "members": [
+            "arthurdfd"
           ],
           "formation": "student"
         }
