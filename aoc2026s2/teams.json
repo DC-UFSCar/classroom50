@@ -345,6 +345,48 @@
           "formation": "student"
         }
       ]
+    },
+    "riscv-multi": {
+      "teams": [
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-1",
+          "id": 20240015,
+          "name": "Bancada A5B",
+          "members": [
+            "joaoasma",
+            "josewinterle"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-2",
+          "id": 20240039,
+          "name": "Bancada A1A",
+          "members": [
+            "CalvinOgata",
+            "Pedro-Junqueira",
+            "Tho-hen"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-3",
+          "id": 20240070,
+          "name": "Bancada A3A",
+          "members": [
+            "vinicius-daros"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-4",
+          "id": 20240099,
+          "members": [
+            "pmendes5"
+          ],
+          "formation": "student"
+        }
+      ]
     }
   }
 }
