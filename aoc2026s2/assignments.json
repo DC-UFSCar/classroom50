@@ -255,7 +255,8 @@
       "team_formation": "student",
       "runtime": {
         "apt": [
-          "iverilog"
+          "iverilog",
+          "gcc-riscv64-unknown-elf"
         ]
       },
       "tests": [
