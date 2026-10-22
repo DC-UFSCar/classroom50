@@ -407,7 +407,7 @@
     },
     {
       "slug": "riscv-multi",
-      "name": "Sim 07 RISC-V Multiciclo",
+      "name": "Sim 09 RISC-V Multiciclo",
       "mode": "team",
       "autograder": "default",
       "feedback_pr": true,
