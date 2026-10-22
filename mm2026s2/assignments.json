@@ -384,6 +384,26 @@
           "points": 10
         }
       ]
+    },
+    {
+      "slug": "trabalho-5-vga",
+      "name": "Trabalho 5 (VGA)",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "remote-lab-quartus-de0cv",
+        "branch": "main"
+      },
+      "max_group_size": 7,
+      "team_formation": "teacher",
+      "grading": {
+        "mode": "off"
+      }
     }
   ]
 }
