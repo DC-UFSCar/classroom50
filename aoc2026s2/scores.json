@@ -12238,9 +12238,46 @@
               }
             }
           ]
+        },
+        {
+          "owner": "group-11",
+          "member_usernames": [
+            "bnccrs",
+            "henriqueastafieff-ufscar",
+            "joao-ufscar3"
+          ],
+          "team_slug": "classroom50-group-ef63d9e1c2ff1b62-11",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-11",
+              "submission": "submit/2026-10-22T13-36-11Z-a5482f9",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-group-11/commit/a5482f9bb2ddf019e5aa7e86f36d24d074a8ea8a",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-group-11/releases/tag/submit%2F2026-10-22T13-36-11Z-a5482f9",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-group-11/compare/d72786adae108470f959a8494276974dc3aeb9d9...a5482f9bb2ddf019e5aa7e86f36d24d074a8ea8a",
+              "datetime": "2026-10-22T13:35:43Z",
+              "graded_at": "2026-10-22T13:36:33Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Fibonacci",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Bnccrs",
+                "id": 120842092
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-10-22T13:28:08Z",
+      "collected_at": "2026-10-22T13:54:11Z",
       "detected": []
     }
   }
