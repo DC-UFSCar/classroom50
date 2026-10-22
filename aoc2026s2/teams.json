@@ -354,7 +354,8 @@
           "name": "Bancada A5B",
           "members": [
             "joaoasma",
-            "josewinterle"
+            "josewinterle",
+            "Luiza650"
           ],
           "formation": "student"
         },
@@ -365,7 +366,8 @@
           "members": [
             "CalvinOgata",
             "Pedro-Junqueira",
-            "Tho-hen"
+            "Tho-hen",
+            "GabiVF"
           ],
           "formation": "student"
         },
@@ -374,7 +376,9 @@
           "id": 20240070,
           "name": "Bancada A3A",
           "members": [
-            "vinicius-daros"
+            "vinicius-daros",
+            "LuisFelipeRVenancio",
+            "isaacrondanine"
           ],
           "formation": "student"
         },
@@ -383,7 +387,9 @@
           "id": 20240099,
           "name": "Bancada A2B",
           "members": [
-            "pmendes5"
+            "gabrielhenrique-c",
+            "pmendes5",
+            "Rodrigoteixeira436"
           ],
           "formation": "student"
         },
@@ -392,7 +398,9 @@
           "id": 20240100,
           "name": "Bancada A4A",
           "members": [
-            "1k3nj1"
+            "1k3nj1",
+            "Iago3457",
+            "khrizzylee2"
           ],
           "formation": "student"
         },
@@ -401,7 +409,10 @@
           "id": 20240105,
           "name": "Bancada A4B",
           "members": [
-            "LeonardoCensi"
+            "LeonardoCensi",
+            "sevla7",
+            "silvestrechiarinettoufscar",
+            "brunospegiorinmgomes"
           ],
           "formation": "student"
         },
@@ -410,7 +421,115 @@
           "id": 20240106,
           "name": "Bancada A1B",
           "members": [
-            "arthurdfd"
+            "arthurdfd",
+            "jp-paschoal",
+            "MiguelLandi"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-8",
+          "id": 20240109,
+          "name": "Bancada A3B",
+          "members": [
+            "vtorlima",
+            "renansiqueira-dev",
+            "guiLHERMAO22",
+            "gabrielosorio1918"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-9",
+          "id": 20240125,
+          "name": "Bancada A2A",
+          "members": [
+            "ggoulart-pro",
+            "ThiagoBrasilUFSCar",
+            "danyykk"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-10",
+          "id": 20240126,
+          "name": "Bancada A5A",
+          "members": [
+            "ggcisabela",
+            "Beatriz-Kwok",
+            "felipebp14-207"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-11",
+          "id": 20249923,
+          "name": "Bancada B3B",
+          "members": [
+            "Bnccrs",
+            "henriqueastafieff-ufscar",
+            "joao-ufscar3"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-12",
+          "id": 20258715,
+          "name": "Bancada  B4A",
+          "members": [
+            "Steatsos",
+            "FavaDaniel",
+            "DaviFilip"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-13",
+          "id": 20260726,
+          "name": "Bancada B5B",
+          "members": [
+            "phbr13",
+            "pedro-testa-ptl",
+            "olelis777"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-14",
+          "id": 20260783,
+          "name": "Bancada B3A",
+          "members": [
+            "100-nick",
+            "eduardosantos712",
+            "Guilhermeps29"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-15",
+          "id": 20260843,
+          "name": "Bancada B2A",
+          "members": [
+            "gabrielfranco9"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-16",
+          "id": 20260864,
+          "name": "Bancada B1A",
+          "members": [
+            "leobluex"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-ef63d9e1c2ff1b62-17",
+          "id": 20260866,
+          "name": "Bancada B1B",
+          "members": [
+            "Tomiokaka",
+            "joao-terra-png"
           ],
           "formation": "student"
         }
