@@ -270,7 +270,7 @@
     },
     {
       "slug": "riscv-multi-mmio",
-      "name": "Trabalho 5 (VGA)",
+      "name": "Lab 08 RISC-V Multiciclo MMIO",
       "mode": "team",
       "autograder": "default",
       "feedback_pr": true,
@@ -282,7 +282,7 @@
         "repo": "remote-lab-quartus-de0cv",
         "branch": "main"
       },
-      "max_group_size": 7,
+      "max_group_size": 8,
       "team_formation": "student",
       "grading": {
         "mode": "off"
