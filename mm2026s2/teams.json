@@ -120,18 +120,6 @@
     "riscv-multi": {
       "teams": [
         {
-          "slug": "classroom50-group-6ced3b4b85b952b5-2",
-          "id": 20362264,
-          "name": "Grupo 1",
-          "members": [
-            "rlfraguasUFSCar",
-            "pedrohmora1s",
-            "pedrocanales-svg",
-            "sciarramellofelipe"
-          ],
-          "formation": "student"
-        },
-        {
           "slug": "classroom50-group-6ced3b4b85b952b5-3",
           "id": 20362275,
           "name": "Grupo 2",
