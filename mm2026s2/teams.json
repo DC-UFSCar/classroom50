@@ -118,20 +118,7 @@
       ]
     },
     "riscv-multi": {
-      "teams": [
-        {
-          "slug": "classroom50-group-6ced3b4b85b952b5-4",
-          "id": 20362277,
-          "name": "Grupo 4",
-          "members": [
-            "marianapipolo-blip",
-            "matheusfahl-ctrl",
-            "LeonardoAPrimo",
-            "ivantamura"
-          ],
-          "formation": "student"
-        }
-      ]
+      "teams": []
     }
   }
 }
