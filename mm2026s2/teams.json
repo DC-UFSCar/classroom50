@@ -120,15 +120,6 @@
     "riscv-multi": {
       "teams": [
         {
-          "slug": "classroom50-group-6ced3b4b85b952b5-1",
-          "id": 20362260,
-          "name": "Grupo 3",
-          "members": [
-            "raulmartinsbessan-byte"
-          ],
-          "formation": "student"
-        },
-        {
           "slug": "classroom50-group-6ced3b4b85b952b5-2",
           "id": 20362264,
           "name": "Grupo 1",
