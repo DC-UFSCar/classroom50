@@ -118,7 +118,55 @@
       ]
     },
     "riscv-multi": {
-      "teams": []
+      "teams": [
+        {
+          "slug": "classroom50-group-6ced3b4b85b952b5-1",
+          "id": 20362526,
+          "name": "Grupo 1",
+          "members": [
+            "gustavoarduca-source",
+            "M4th-e",
+            "rlfraguasUFSCar",
+            "pedrohmora1s",
+            "pedrocanales-svg",
+            "sciarramellofelipe"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-6ced3b4b85b952b5-2",
+          "id": 20362534,
+          "name": "Grupo 2",
+          "members": [
+            "wandermerces-bot"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-6ced3b4b85b952b5-3",
+          "id": 20362544,
+          "name": "Grupo 3",
+          "members": [
+            "gabrielgasqui-beep",
+            "shengyanhuang1711",
+            "raulmartinsbessan-byte",
+            "laurafrancoso102"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-6ced3b4b85b952b5-4",
+          "id": 20362560,
+          "name": "Grupo 4",
+          "members": [
+            "AnaBoccaletti",
+            "matheusfahl-ctrl",
+            "LeonardoAPrimo",
+            "ivantamura"
+          ],
+          "formation": "student"
+        }
+      ]
     }
   }
 }
