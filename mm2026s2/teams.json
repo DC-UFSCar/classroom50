@@ -120,17 +120,6 @@
     "riscv-multi": {
       "teams": [
         {
-          "slug": "classroom50-group-6ced3b4b85b952b5-3",
-          "id": 20362275,
-          "name": "Grupo 2",
-          "members": [
-            "joao2-cell",
-            "wandermerces-bot",
-            "anacags-alt"
-          ],
-          "formation": "student"
-        },
-        {
           "slug": "classroom50-group-6ced3b4b85b952b5-4",
           "id": 20362277,
           "name": "Grupo 4",
