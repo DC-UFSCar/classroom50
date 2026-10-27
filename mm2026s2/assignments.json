@@ -418,7 +418,7 @@
         "repo": "riscv-multi",
         "branch": "main"
       },
-      "max_group_size": 8,
+      "max_group_size": 9,
       "team_formation": "student",
       "runtime": {
         "apt": [
