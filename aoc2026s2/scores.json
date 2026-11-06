@@ -2633,6 +2633,38 @@
               "classroom": "aoc2026s2",
               "assignment_type": "individual",
               "owner": "gabrielhenrique-c",
+              "submission": "submit/2026-09-16T13-57-51Z-d635473",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabrielhenrique-c/commit/d635473d4124e66b3d44dd6b213301297b160109",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabrielhenrique-c/releases/tag/submit%2F2026-09-16T13-57-51Z-d635473",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabrielhenrique-c/compare/6e5105860113161913989eab976638d5b9e3581b...d635473d4124e66b3d44dd6b213301297b160109",
+              "datetime": "2026-09-16T13:57:38Z",
+              "graded_at": "2026-09-16T13:58:29Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "gabrielhenrique-c",
+                "id": 52293372
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "gabrielhenrique-c",
               "submission": "submit/2026-08-30T11-14-14Z-e2b7aae",
               "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabrielhenrique-c/commit/e2b7aae10ee5686164897f1fd08b07e939ae6172",
               "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabrielhenrique-c/releases/tag/submit%2F2026-08-30T11-14-14Z-e2b7aae",
@@ -2702,6 +2734,7 @@
         },
         {
           "owner": "phbr13",
+          "email": "phbcosta@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -2999,6 +3032,7 @@
         },
         {
           "owner": "arthurdfd",
+          "email": "arthurdalia@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -3188,6 +3222,7 @@
         },
         {
           "owner": "khrizzylee2",
+          "email": "kelechiigbojionu@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -3624,6 +3659,7 @@
         },
         {
           "owner": "murilovalente-exe",
+          "email": "murilovalente@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -3661,6 +3697,7 @@
         },
         {
           "owner": "gabrielfranco9",
+          "email": "gfranco@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -3698,6 +3735,7 @@
         },
         {
           "owner": "nathalymdj",
+          "email": "nathalymj@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -3957,6 +3995,7 @@
         },
         {
           "owner": "rodrigbruno",
+          "email": "rodriguesbruno@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -4330,6 +4369,7 @@
         },
         {
           "owner": "joao-ufscar3",
+          "email": "joao.tomaz@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -4512,6 +4552,7 @@
         },
         {
           "owner": "eduardosantos712",
+          "email": "eduardosantos96@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -4654,17 +4695,422 @@
               }
             }
           ]
-        }
-      ],
-      "collected_at": "2026-09-16T11:56:16Z",
-      "detected": [
+        },
+        {
+          "owner": "castro-fer",
+          "email": "fernandocastro@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "castro-fer",
+              "submission": "submit/2026-09-17T13-35-26Z-c497ae0",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-castro-fer/commit/c497ae0118efcd2e8d755665b03830789ca7bbee",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-castro-fer/releases/tag/submit%2F2026-09-17T13-35-26Z-c497ae0",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-castro-fer/compare/4599e516496e490d631845e391c9ae01e7e6ab2e...c497ae0118efcd2e8d755665b03830789ca7bbee",
+              "datetime": "2026-09-17T13:27:28Z",
+              "graded_at": "2026-09-17T13:35:54Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "castro-fer",
+                "id": 129780150
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "castro-fer",
+              "submission": "submit/2026-09-17T10-46-03Z-7376de6",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-castro-fer/commit/7376de64f04be748abe92e1c3300381e99c12d85",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-castro-fer/releases/tag/submit%2F2026-09-17T10-46-03Z-7376de6",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-castro-fer/compare/4599e516496e490d631845e391c9ae01e7e6ab2e...7376de64f04be748abe92e1c3300381e99c12d85",
+              "datetime": "2026-09-17T10:44:46Z",
+              "graded_at": "2026-09-17T10:46:37Z",
+              "score": 5,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "castro-fer",
+                "id": 129780150
+              }
+            }
+          ]
+        },
+        {
+          "owner": "Tho-hen",
+          "email": "thomas.henschel@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "tho-hen",
+              "submission": "submit/2026-09-22T12-48-02Z-e4e77fe",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-tho-hen/commit/e4e77fe6473509d380f38d9a2b91f06d02add77c",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-tho-hen/releases/tag/submit%2F2026-09-22T12-48-02Z-e4e77fe",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-tho-hen/compare/e380022e60ef9e78989a7ba101f2e02cd11ecb1a...e4e77fe6473509d380f38d9a2b91f06d02add77c",
+              "datetime": "2026-09-22T12:47:40Z",
+              "graded_at": "2026-09-22T12:48:32Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "Tho-hen",
+                "id": 185139816
+              }
+            }
+          ]
+        },
+        {
+          "owner": "vtorlima",
+          "email": "vitorsantos@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "vtorlima",
+              "submission": "submit/2026-09-16T23-47-55Z-69e9f76",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-vtorlima/commit/69e9f7674e53767b0d02988055ed2c99d51d7b6e",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-vtorlima/releases/tag/submit%2F2026-09-16T23-47-55Z-69e9f76",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-vtorlima/compare/6c19181b442a5e23d94952a4067c19af42bf7724...69e9f7674e53767b0d02988055ed2c99d51d7b6e",
+              "datetime": "2026-09-16T23:47:35Z",
+              "graded_at": "2026-09-16T23:48:22Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "vtorlima",
+                "id": 205826417
+              }
+            }
+          ]
+        },
+        {
+          "owner": "GabiVF",
+          "email": "gabrielavinhafeitosa@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "gabivf",
+              "submission": "submit/2026-09-21T15-23-57Z-2d66f88",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabivf/commit/2d66f884ed59dcbe99491f1eef5fb667194b9626",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabivf/releases/tag/submit%2F2026-09-21T15-23-57Z-2d66f88",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-gabivf/compare/190d5f902f62db5ec698c3a33b0f35e8ab5604f8...2d66f884ed59dcbe99491f1eef5fb667194b9626",
+              "datetime": "2026-09-21T15:23:39Z",
+              "graded_at": "2026-09-21T15:24:38Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "GabiVF",
+                "id": 206148388
+              }
+            }
+          ]
+        },
+        {
+          "owner": "joaoasma",
+          "email": "jasmartins@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "joaoasma",
+              "submission": "submit/2026-09-20T00-26-51Z-cbdea01",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-joaoasma/commit/cbdea019ab94142395b1dc8bdfdf45a65fd9edd7",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-joaoasma/releases/tag/submit%2F2026-09-20T00-26-51Z-cbdea01",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-joaoasma/compare/e6cf295d3ec08de9e8bbbf968dd4273ef19da483...cbdea019ab94142395b1dc8bdfdf45a65fd9edd7",
+              "datetime": "2026-09-20T00:26:36Z",
+              "graded_at": "2026-09-20T00:27:19Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "joaoasma",
+                "id": 211520784
+              }
+            }
+          ]
+        },
+        {
+          "owner": "JoaoPchagas491",
+          "email": "joao12@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "joaopchagas491",
+              "submission": "submit/2026-09-16T14-14-34Z-1e44cfb",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-joaopchagas491/commit/1e44cfb5099bd4d7f12078c65fc9a815e2622433",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-joaopchagas491/releases/tag/submit%2F2026-09-16T14-14-34Z-1e44cfb",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-joaopchagas491/compare/97b97cf59c285c2a93db45f32753e44bb771b7b1...1e44cfb5099bd4d7f12078c65fc9a815e2622433",
+              "datetime": "2026-09-16T14:14:13Z",
+              "graded_at": "2026-09-16T14:15:02Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "JoaoPchagas491",
+                "id": 268925400
+              }
+            }
+          ]
+        },
         {
           "owner": "isaacrondanine",
-          "count": 1,
-          "latest_datetime": "2026-09-09T17:56:32Z",
-          "kind": "commit"
+          "email": "isaacrondanine@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "isaacrondanine",
+              "submission": "submit/2026-09-17T20-21-15Z-cb9fbfe",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-isaacrondanine/commit/cb9fbfebd04c45a6dc0152add15ac5353e1ef66b",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-isaacrondanine/releases/tag/submit%2F2026-09-17T20-21-15Z-cb9fbfe",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-isaacrondanine/compare/43f6855436aa3b4def199af0e9925e6ef1ad944c...cb9fbfebd04c45a6dc0152add15ac5353e1ef66b",
+              "datetime": "2026-09-17T20:20:53Z",
+              "graded_at": "2026-09-17T20:21:48Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "isaacrondanine",
+                "id": 268925869
+              }
+            }
+          ]
+        },
+        {
+          "owner": "miguelrossini19",
+          "email": "miguelrossini@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "miguelrossini19",
+              "submission": "submit/2026-09-18T20-16-12Z-4647b72",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-miguelrossini19/commit/4647b722fc9cfee5913915f41bd204f7cf9883a4",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-miguelrossini19/releases/tag/submit%2F2026-09-18T20-16-12Z-4647b72",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-miguelrossini19/compare/4788d6c2adb2c0a12720b297081f0ed61f542cf6...4647b722fc9cfee5913915f41bd204f7cf9883a4",
+              "datetime": "2026-09-18T20:15:16Z",
+              "graded_at": "2026-09-18T20:16:37Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "miguelrossini19",
+                "id": 269562256
+              }
+            }
+          ]
+        },
+        {
+          "owner": "Guilhermeps29",
+          "email": "guilhermeps@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "guilhermeps29",
+              "submission": "submit/2026-09-29T16-59-49Z-aed333f",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-guilhermeps29/commit/aed333f536c7cadea0e939e045c83a6e99f38433",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-guilhermeps29/releases/tag/submit%2F2026-09-29T16-59-49Z-aed333f",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-guilhermeps29/compare/35fcf5b9ad88d3e9e3d602f0ef5ace3875eb61c2...aed333f536c7cadea0e939e045c83a6e99f38433",
+              "datetime": "2026-09-29T16:59:26Z",
+              "graded_at": "2026-09-29T17:00:22Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "Guilhermeps29",
+                "id": 269995691
+              }
+            }
+          ]
+        },
+        {
+          "owner": "brunospegiorinmgomes",
+          "email": "brunogomes@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "brunospegiorinmgomes",
+              "submission": "submit/2026-09-18T00-59-41Z-650f3b8",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-brunospegiorinmgomes/commit/650f3b80760caf3db043668ed27ec5ab3738863b",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-brunospegiorinmgomes/releases/tag/submit%2F2026-09-18T00-59-41Z-650f3b8",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-registers-memory-brunospegiorinmgomes/compare/db3913b9ca66ada3187db4e9f775f37da977a0c3...650f3b80760caf3db043668ed27ec5ab3738863b",
+              "datetime": "2026-09-18T00:59:31Z",
+              "graded_at": "2026-09-18T01:00:11Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test values",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "Test output",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                }
+              ],
+              "submitted_by": {
+                "username": "brunospegiorinmgomes",
+                "id": 318735599
+              }
+            }
+          ]
         }
-      ]
+      ],
+      "collected_at": "2026-11-06T17:34:40Z",
+      "detected": []
     },
     "rf-test-bench": {
       "type": "individual",
