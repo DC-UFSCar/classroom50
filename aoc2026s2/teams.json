@@ -534,6 +534,170 @@
           "formation": "student"
         }
       ]
+    },
+    "risc-v-alu": {
+      "teams": [
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-1",
+          "id": 19352964,
+          "name": "Grupo A0 (The Segfaults)",
+          "members": [
+            "menotti"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-2",
+          "id": 19459095,
+          "name": "Grupo A1",
+          "members": [
+            "CalvinOgata",
+            "arthurdfd",
+            "Pedro-Junqueira",
+            "Tho-hen",
+            "jp-paschoal",
+            "GabiVF",
+            "MiguelLandi"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-3",
+          "id": 19489934,
+          "name": "AZ - Monitoria",
+          "members": [
+            "natanael-pastore"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-4",
+          "id": 19494404,
+          "name": "Grupo A4",
+          "members": [
+            "1k3nj1",
+            "Iago3457",
+            "LeonardoCensi",
+            "khrizzylee2",
+            "jpcheadi",
+            "silvestrechiarinettoufscar",
+            "brunospegiorinmgomes"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-5",
+          "id": 19503348,
+          "name": "Grupo A5",
+          "members": [
+            "joaoasma",
+            "josewinterle",
+            "ggcisabela",
+            "Beatriz-Kwok",
+            "Luiza650",
+            "felipebp14-207"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-6",
+          "id": 19532216,
+          "name": "Grupo A3",
+          "members": [
+            "vinicius-daros",
+            "vtorlima",
+            "isaacrondanine",
+            "renansiqueira-dev",
+            "guiLHERMAO22",
+            "gabrielosorio1918"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-7",
+          "id": 19532386,
+          "name": "Grupo A2",
+          "members": [
+            "gabrielhenrique-c",
+            "pmendes5",
+            "ggoulart-pro",
+            "JoaoPchagas491",
+            "ThiagoBrasilUFSCar",
+            "danyykk",
+            "Rodrigoteixeira436"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-8",
+          "id": 19537101,
+          "name": "Grupo B3",
+          "members": [
+            "Bnccrs",
+            "100-nick",
+            "eduardosantos712",
+            "Guilhermeps29",
+            "henriqueastafieff-ufscar",
+            "joao-ufscar3"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-9",
+          "id": 19548913,
+          "name": "Grupo B4",
+          "members": [
+            "Steatsos",
+            "LuisLima03",
+            "ddiogo-dot",
+            "FavaDaniel",
+            "murilovalente-exe",
+            "DaviFilip",
+            "PedroHenriqueC26"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-10",
+          "id": 19548923,
+          "name": "Grupo B5",
+          "members": [
+            "phbr13",
+            "murilo-destaole",
+            "pedro-testa-ptl",
+            "olelis777"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-11",
+          "id": 19548936,
+          "name": "Grupo B2",
+          "members": [
+            "gdefaria",
+            "itzxw",
+            "gabrielfranco9",
+            "rodrigbruno",
+            "vitorferracciu",
+            "arthurlinssz"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-38cfb2c95ab87fd7-12",
+          "id": 19548940,
+          "name": "Grupo B1",
+          "members": [
+            "Tomiokaka",
+            "castro-fer",
+            "joao-terra-png",
+            "nathalymdj",
+            "miguelrossini19",
+            "leobluex"
+          ],
+          "formation": "student"
+        }
+      ]
     }
   }
 }
