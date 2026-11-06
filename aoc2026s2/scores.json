@@ -7240,9 +7240,105 @@
               }
             }
           ]
+        },
+        {
+          "owner": "Bnccrs",
+          "email": "lucasbonaccorsi@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "bnccrs",
+              "submission": "submit/2026-09-27T00-36-10Z-62433d2",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-bnccrs/commit/62433d2ad8dd57139950f8b3f6138f331e3724ad",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-bnccrs/releases/tag/submit%2F2026-09-27T00-36-10Z-62433d2",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-bnccrs/compare/fb5d1e999ba78b564ec749c0946b72351eec92fb...62433d2ad8dd57139950f8b3f6138f331e3724ad",
+              "datetime": "2026-09-27T00:35:51Z",
+              "graded_at": "2026-09-27T00:36:31Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Bnccrs",
+                "id": 120842092
+              }
+            }
+          ]
+        },
+        {
+          "owner": "Guilhermeps29",
+          "email": "guilhermeps@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "guilhermeps29",
+              "submission": "submit/2026-09-29T17-02-50Z-f49c606",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-guilhermeps29/commit/f49c60680896fd2f83a34ad5cadc017f382d634e",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-guilhermeps29/releases/tag/submit%2F2026-09-29T17-02-50Z-f49c606",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-guilhermeps29/compare/d31d35063bd38631119a3468d9bcd2d284772f51...f49c60680896fd2f83a34ad5cadc017f382d634e",
+              "datetime": "2026-09-29T17:02:23Z",
+              "graded_at": "2026-09-29T17:03:23Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Guilhermeps29",
+                "id": 269995691
+              }
+            }
+          ]
+        },
+        {
+          "owner": "arthurlinssz",
+          "email": "arthurlins@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "individual",
+              "owner": "arthurlinssz",
+              "submission": "submit/2026-09-30T13-38-46Z-14a3678",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-arthurlinssz/commit/14a367860610f910ce8734eb0c3eff8eca5de483",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-arthurlinssz/releases/tag/submit%2F2026-09-30T13-38-46Z-14a3678",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-rf-test-bench-arthurlinssz/compare/ea7c0ad64a3f14158007dfbe6a208b60afde9ea7...14a367860610f910ce8734eb0c3eff8eca5de483",
+              "datetime": "2026-09-30T13:38:26Z",
+              "graded_at": "2026-09-30T13:39:07Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "arthurlinssz",
+                "id": 281079961
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-09-24T20:48:09Z",
+      "collected_at": "2026-11-06T17:36:47Z",
       "detected": []
     },
     "strings-asm": {
