@@ -437,7 +437,7 @@
     },
     {
       "slug": "trabalho-6-cpu-vga",
-      "name": "Trabalho 5 (VGA)",
+      "name": "Trabalho 6 (CPU+VGA)",
       "mode": "team",
       "autograder": "default",
       "feedback_pr": true,
