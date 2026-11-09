@@ -3212,6 +3212,263 @@
           "team_slug": "classroom50-group-c97915861692a629-4"
         }
       ]
+    },
+    "rf-test-bench": {
+      "type": "individual",
+      "entries": [
+        {
+          "owner": "rlfraguasUFSCar",
+          "email": "rafaelfraguas@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "rlfraguasufscar",
+              "submission": "submit/2026-10-25T21-17-38Z-8c3fffa",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-rlfraguasufscar/commit/8c3fffa45beb64af5c9060f2c298a696e1622aeb",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-rlfraguasufscar/releases/tag/submit%2F2026-10-25T21-17-38Z-8c3fffa",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-rlfraguasufscar/compare/5af49893ba8840ff2a6cafe68728843a13bf82d2...8c3fffa45beb64af5c9060f2c298a696e1622aeb",
+              "datetime": "2026-10-25T21:17:22Z",
+              "graded_at": "2026-10-25T21:17:58Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "rlfraguasUFSCar",
+                "id": 245873291
+              }
+            }
+          ]
+        },
+        {
+          "owner": "joao2-cell",
+          "email": "joao2@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "joao2-cell",
+              "submission": "submit/2026-11-02T19-06-04Z-199915c",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-joao2-cell/commit/199915c2db512ba38def1569e9095d0dcc0ac661",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-joao2-cell/releases/tag/submit%2F2026-11-02T19-06-04Z-199915c",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-joao2-cell/compare/b0d58c1d9b9035a8241f8c334c103ee8a8b9252c...199915c2db512ba38def1569e9095d0dcc0ac661",
+              "datetime": "2026-11-02T19:04:44Z",
+              "graded_at": "2026-11-02T19:07:00Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "joao2-cell",
+                "id": 318268584
+              }
+            }
+          ]
+        },
+        {
+          "owner": "pedrohmora1s",
+          "email": "pedro.morais@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "pedrohmora1s",
+              "submission": "submit/2026-10-25T02-36-25Z-2e7634d",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-pedrohmora1s/commit/2e7634dd8a4617d4d87976d7b1aa8a422fe1ba7d",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-pedrohmora1s/releases/tag/submit%2F2026-10-25T02-36-25Z-2e7634d",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-pedrohmora1s/compare/858787d39e62006db02e11b1013694441b9fe209...2e7634dd8a4617d4d87976d7b1aa8a422fe1ba7d",
+              "datetime": "2026-10-25T02:36:11Z",
+              "graded_at": "2026-10-25T02:36:44Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "pedrohmora1s",
+                "id": 318268725
+              }
+            }
+          ]
+        },
+        {
+          "owner": "anacags-alt",
+          "email": "anacags@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "anacags-alt",
+              "submission": "submit/2026-10-19T19-22-02Z-2b2070a",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-anacags-alt/commit/2b2070af9431b3b26206ec50d6152e20399ad021",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-anacags-alt/releases/tag/submit%2F2026-10-19T19-22-02Z-2b2070a",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-anacags-alt/compare/86f8ade26fb01d7f5374f5b2740256cacf314fb3...2b2070af9431b3b26206ec50d6152e20399ad021",
+              "datetime": "2026-10-19T19:21:51Z",
+              "graded_at": "2026-10-19T19:22:26Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "anacags-alt",
+                "id": 318268783
+              }
+            }
+          ]
+        },
+        {
+          "owner": "raulmartinsbessan-byte",
+          "email": "raulmartinsbessan@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "raulmartinsbessan-byte",
+              "submission": "submit/2026-10-20T00-20-44Z-32812f2",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-raulmartinsbessan-byte/commit/32812f236ec23f402da67e6c4f3224a6b90e3474",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-raulmartinsbessan-byte/releases/tag/submit%2F2026-10-20T00-20-44Z-32812f2",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-raulmartinsbessan-byte/compare/24e52546f113862c82cbd83d265d387723538b72...32812f236ec23f402da67e6c4f3224a6b90e3474",
+              "datetime": "2026-10-20T00:20:24Z",
+              "graded_at": "2026-10-20T00:21:05Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "raulmartinsbessan-byte",
+                "id": 318269770
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "raulmartinsbessan-byte",
+              "submission": "submit/2026-10-20T00-12-45Z-8f370e3",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-raulmartinsbessan-byte/commit/8f370e3045fb15f739dbad8f52178e6ef536cd37",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-raulmartinsbessan-byte/releases/tag/submit%2F2026-10-20T00-12-45Z-8f370e3",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-raulmartinsbessan-byte/compare/24e52546f113862c82cbd83d265d387723538b72...8f370e3045fb15f739dbad8f52178e6ef536cd37",
+              "datetime": "2026-10-20T00:12:30Z",
+              "graded_at": "2026-10-20T00:13:05Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "raulmartinsbessan-byte",
+                "id": 318269770
+              }
+            }
+          ]
+        },
+        {
+          "owner": "sciarramellofelipe",
+          "email": "felipesciarramello@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "sciarramellofelipe",
+              "submission": "submit/2026-10-19T19-49-36Z-03a300a",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-sciarramellofelipe/commit/03a300a0858c5cbe3a703a1b429d070929a2f3b0",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-sciarramellofelipe/releases/tag/submit%2F2026-10-19T19-49-36Z-03a300a",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-sciarramellofelipe/compare/9af9365927fa51ae905c95d2d096b873b79e45e4...03a300a0858c5cbe3a703a1b429d070929a2f3b0",
+              "datetime": "2026-10-19T19:49:21Z",
+              "graded_at": "2026-10-19T19:50:00Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "sciarramellofelipe",
+                "id": 318283661
+              }
+            }
+          ]
+        },
+        {
+          "owner": "laurafrancoso102",
+          "email": "laurafrancoso@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "laurafrancoso102",
+              "submission": "submit/2026-10-21T20-45-20Z-d96efbd",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-laurafrancoso102/commit/d96efbdd71a0f7a05082e807e26bcbefbd5aca3d",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-laurafrancoso102/releases/tag/submit%2F2026-10-21T20-45-20Z-d96efbd",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-rf-test-bench-laurafrancoso102/compare/8312985488b5af46360a1949a120b06f91106397...d96efbdd71a0f7a05082e807e26bcbefbd5aca3d",
+              "datetime": "2026-10-21T20:45:05Z",
+              "graded_at": "2026-10-21T20:45:44Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "RF test bench",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "laurafrancoso102",
+                "id": 318321606
+              }
+            }
+          ]
+        }
+      ],
+      "collected_at": "2026-11-09T18:59:01Z",
+      "detected": []
     }
   }
 }
