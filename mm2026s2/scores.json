@@ -1217,6 +1217,44 @@
               "classroom": "mm2026s2",
               "assignment_type": "individual",
               "owner": "gabrielgasqui-beep",
+              "submission": "submit/2026-10-06T00-27-56Z-62cfea3",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-gabrielgasqui-beep/commit/62cfea3c4f399e252f403b9f4eb38c7e9e955698",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-gabrielgasqui-beep/releases/tag/submit%2F2026-10-06T00-27-56Z-62cfea3",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-gabrielgasqui-beep/compare/caa3c4eeb1697cfd9cddb004bc421e70593f781e...62cfea3c4f399e252f403b9f4eb38c7e9e955698",
+              "datetime": "2026-10-06T00:27:33Z",
+              "graded_at": "2026-10-06T00:28:30Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "gabrielgasqui-beep",
+                "id": 227409994
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "gabrielgasqui-beep",
               "submission": "submit/2026-09-28T19-48-13Z-8d49517",
               "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-gabrielgasqui-beep/commit/8d495170d7978530516165ab23913b3f00df6e50",
               "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-gabrielgasqui-beep/releases/tag/submit%2F2026-09-28T19-48-13Z-8d49517",
@@ -1891,6 +1929,120 @@
               "classroom": "mm2026s2",
               "assignment_type": "individual",
               "owner": "matheusfahl-ctrl",
+              "submission": "submit/2026-09-29T13-43-40Z-133ca19",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/commit/133ca197dcba472e09f596abf1ffce910efdf9a6",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/releases/tag/submit%2F2026-09-29T13-43-40Z-133ca19",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/compare/e4481784d12a857b0dca42117191274412d52fb4...133ca197dcba472e09f596abf1ffce910efdf9a6",
+              "datetime": "2026-09-29T13:43:27Z",
+              "graded_at": "2026-09-29T13:44:14Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "matheusfahl-ctrl",
+                "id": 318269779
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "matheusfahl-ctrl",
+              "submission": "submit/2026-09-29T13-36-26Z-7ad7e7e",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/commit/7ad7e7ee8461c3e672a6920882ce9e7c96215a31",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/releases/tag/submit%2F2026-09-29T13-36-26Z-7ad7e7e",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/compare/e4481784d12a857b0dca42117191274412d52fb4...7ad7e7ee8461c3e672a6920882ce9e7c96215a31",
+              "datetime": "2026-09-29T13:36:10Z",
+              "graded_at": "2026-09-29T13:37:00Z",
+              "score": 7,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "matheusfahl-ctrl",
+                "id": 318269779
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "matheusfahl-ctrl",
+              "submission": "submit/2026-09-29T13-33-04Z-92c0de2",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/commit/92c0de23027ee82e675d880e3d8b0286d7f1df66",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/releases/tag/submit%2F2026-09-29T13-33-04Z-92c0de2",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/compare/e4481784d12a857b0dca42117191274412d52fb4...92c0de23027ee82e675d880e3d8b0286d7f1df66",
+              "datetime": "2026-09-29T13:32:52Z",
+              "graded_at": "2026-09-29T13:33:36Z",
+              "score": 3,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "matheusfahl-ctrl",
+                "id": 318269779
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "matheusfahl-ctrl",
               "submission": "submit/2026-09-23T00-52-43Z-b133056",
               "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/commit/b1330567967f93ec466c861da99f94b4ea9a3e39",
               "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-matheusfahl-ctrl/releases/tag/submit%2F2026-09-23T00-52-43Z-b133056",
@@ -2329,10 +2481,257 @@
               }
             }
           ]
+        },
+        {
+          "owner": "marianapipolo-blip",
+          "email": "marianapipolo@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "marianapipolo-blip",
+              "submission": "submit/2026-09-29T13-30-39Z-2ca357b",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-marianapipolo-blip/commit/2ca357bede38503e8afc361edcddd86f6aaf0dc8",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-marianapipolo-blip/releases/tag/submit%2F2026-09-29T13-30-39Z-2ca357b",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-marianapipolo-blip/compare/9a64410b0e8bdc62f42358e32876661851d8eb70...2ca357bede38503e8afc361edcddd86f6aaf0dc8",
+              "datetime": "2026-09-29T13:30:24Z",
+              "graded_at": "2026-09-29T13:31:09Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "marianapipolo-blip",
+                "id": 318268351
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "marianapipolo-blip",
+              "submission": "submit/2026-09-29T13-25-20Z-72de4a9",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-marianapipolo-blip/commit/72de4a92d56fa7d67a05f03d673a93ca92d2adb1",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-marianapipolo-blip/releases/tag/submit%2F2026-09-29T13-25-20Z-72de4a9",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-marianapipolo-blip/compare/9a64410b0e8bdc62f42358e32876661851d8eb70...72de4a92d56fa7d67a05f03d673a93ca92d2adb1",
+              "datetime": "2026-09-29T13:25:05Z",
+              "graded_at": "2026-09-29T13:33:11Z",
+              "score": 6,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "marianapipolo-blip",
+                "id": 318268351
+              }
+            }
+          ]
+        },
+        {
+          "owner": "LeonardoAPrimo",
+          "email": "leonardo.primo@estudante.ufscar.br",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "leonardoaprimo",
+              "submission": "submit/2026-09-29T14-21-35Z-4bb2b13",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/commit/4bb2b13e669c79ecc0d2085b60d42581a4730572",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/releases/tag/submit%2F2026-09-29T14-21-35Z-4bb2b13",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/compare/5f1905be3fd251fe710b27865a27fb7b52823337...4bb2b13e669c79ecc0d2085b60d42581a4730572",
+              "datetime": "2026-09-29T14:21:20Z",
+              "graded_at": "2026-09-29T14:22:17Z",
+              "score": 6,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "LeonardoAPrimo",
+                "id": 320666817
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "leonardoaprimo",
+              "submission": "submit/2026-09-29T14-13-24Z-9c2dd75",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/commit/9c2dd75e46a5433c4a3b9d65d9e4e84a89dc1c0a",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/releases/tag/submit%2F2026-09-29T14-13-24Z-9c2dd75",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/compare/5f1905be3fd251fe710b27865a27fb7b52823337...9c2dd75e46a5433c4a3b9d65d9e4e84a89dc1c0a",
+              "datetime": "2026-09-29T14:13:12Z",
+              "graded_at": "2026-09-29T14:13:56Z",
+              "score": 3,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "LeonardoAPrimo",
+                "id": 320666817
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "leonardoaprimo",
+              "submission": "submit/2026-09-29T14-06-34Z-d71b483",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/commit/d71b483b0df8db4580f1af29e041ce7971e3dab9",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/releases/tag/submit%2F2026-09-29T14-06-34Z-d71b483",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/compare/5f1905be3fd251fe710b27865a27fb7b52823337...d71b483b0df8db4580f1af29e041ce7971e3dab9",
+              "datetime": "2026-09-29T14:06:21Z",
+              "graded_at": "2026-09-29T14:07:33Z",
+              "score": 3,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "LeonardoAPrimo",
+                "id": 320666817
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "mm2026s2",
+              "assignment_type": "individual",
+              "owner": "leonardoaprimo",
+              "submission": "submit/2026-09-29T13-52-11Z-8af2cd4",
+              "commit": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/commit/8af2cd4715e138e89b0f49791c4df1edb00a12a6",
+              "release": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/releases/tag/submit%2F2026-09-29T13-52-11Z-8af2cd4",
+              "review": "https://github.com/DC-UFSCar/mm2026s2-strings-asm-leonardoaprimo/compare/5f1905be3fd251fe710b27865a27fb7b52823337...8af2cd4715e138e89b0f49791c4df1edb00a12a6",
+              "datetime": "2026-09-29T13:51:51Z",
+              "graded_at": "2026-09-29T13:52:43Z",
+              "score": 3,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test maiuscula",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test minuscula",
+                  "passed": true,
+                  "score": 3,
+                  "max-score": 3
+                },
+                {
+                  "test-name": "Test imvert",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "LeonardoAPrimo",
+                "id": 320666817
+              }
+            }
+          ]
         }
       ],
-      "collected_at": "2026-09-29T11:54:29Z",
-      "detected": []
+      "collected_at": "2026-11-09T19:01:07Z",
+      "detected": [
+        {
+          "owner": "ivantamura",
+          "count": 2,
+          "latest_datetime": "2026-10-25T00:17:22Z",
+          "kind": "commit"
+        }
+      ]
     },
     "trabalho-3-arm": {
       "type": "team",
