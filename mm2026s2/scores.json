@@ -716,6 +716,7 @@
         },
         {
           "owner": "joao2-cell",
+          "email": "joao2@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -791,6 +792,7 @@
         },
         {
           "owner": "wandermerces-bot",
+          "email": "wandermerces@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -942,6 +944,7 @@
         },
         {
           "owner": "matheusfahl-ctrl",
+          "email": "matheusfahl@estudante.ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -1131,6 +1134,7 @@
         },
         {
           "owner": "menotti",
+          "email": "menotti@ufscar.br",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -1167,7 +1171,7 @@
           ]
         }
       ],
-      "collected_at": "2026-09-25T13:04:31Z",
+      "collected_at": "2026-11-09T19:00:09Z",
       "detected": []
     },
     "trabalho-2-mmio": {
