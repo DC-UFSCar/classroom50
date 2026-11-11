@@ -702,15 +702,6 @@
     "riscv-multi-mmio": {
       "teams": [
         {
-          "slug": "classroom50-group-9dbc206d9ae942f7-1",
-          "id": 20282258,
-          "name": "Grupo C3 (Professor & Monitor)",
-          "members": [
-            "menotti"
-          ],
-          "formation": "student"
-        },
-        {
           "slug": "classroom50-group-9dbc206d9ae942f7-3",
           "id": 20615200,
           "name": "Grupo A2",
