@@ -700,17 +700,7 @@
       ]
     },
     "riscv-multi-mmio": {
-      "teams": [
-        {
-          "slug": "classroom50-group-9dbc206d9ae942f7-1",
-          "id": 20642234,
-          "name": "Grupo A3B",
-          "members": [
-            "gabrielosorio1918"
-          ],
-          "formation": "student"
-        }
-      ]
+      "teams": []
     }
   }
 }
