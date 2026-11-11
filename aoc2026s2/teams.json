@@ -702,11 +702,11 @@
     "riscv-multi-mmio": {
       "teams": [
         {
-          "slug": "classroom50-group-9dbc206d9ae942f7-3",
-          "id": 20615200,
-          "name": "Grupo A2",
+          "slug": "classroom50-group-9dbc206d9ae942f7-1",
+          "id": 20642234,
+          "name": "Grupo A3B",
           "members": [
-            "ggoulart-pro"
+            "gabrielosorio1918"
           ],
           "formation": "student"
         }
