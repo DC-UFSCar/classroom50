@@ -698,6 +698,63 @@
           "formation": "student"
         }
       ]
+    },
+    "riscv-multi-mmio": {
+      "teams": [
+        {
+          "slug": "classroom50-group-9dbc206d9ae942f7-1",
+          "id": 20282258,
+          "name": "Grupo C3 (Professor & Monitor)",
+          "members": [
+            "menotti"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9dbc206d9ae942f7-2",
+          "id": 20288062,
+          "name": "Grupo Z0A (monitoria)",
+          "members": [
+            "natanael-pastore"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9dbc206d9ae942f7-3",
+          "id": 20615200,
+          "name": "Grupo A2",
+          "members": [
+            "ggoulart-pro"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9dbc206d9ae942f7-4",
+          "id": 20641941,
+          "members": [
+            "jp-paschoal"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9dbc206d9ae942f7-5",
+          "id": 20641965,
+          "members": [
+            "Pedro-Junqueira"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9dbc206d9ae942f7-6",
+          "id": 20642020,
+          "name": "A3A",
+          "members": [
+            "vinicius-daros",
+            "LuisFelipeRVenancio"
+          ],
+          "formation": "student"
+        }
+      ]
     }
   }
 }
