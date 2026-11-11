@@ -700,17 +700,7 @@
       ]
     },
     "riscv-multi-mmio": {
-      "teams": [
-        {
-          "slug": "classroom50-group-9dbc206d9ae942f7-3",
-          "id": 20615200,
-          "name": "Grupo A2",
-          "members": [
-            "ggoulart-pro"
-          ],
-          "formation": "student"
-        }
-      ]
+      "teams": []
     }
   }
 }
