@@ -269,26 +269,6 @@
       ]
     },
     {
-      "slug": "riscv-multi-mmio",
-      "name": "Lab 08 RISC-V Multiciclo MMIO",
-      "mode": "team",
-      "autograder": "default",
-      "feedback_pr": true,
-      "no_autograder": true,
-      "copy_about": true,
-      "copy_topics": true,
-      "template": {
-        "owner": "DC-UFSCar",
-        "repo": "remote-lab-quartus-de0cv",
-        "branch": "main"
-      },
-      "max_group_size": 8,
-      "team_formation": "student",
-      "grading": {
-        "mode": "off"
-      }
-    },
-    {
       "slug": "riscv-multi-lbsb",
       "name": "Sim 09 RISC-V Multiciclo com LB/SB",
       "mode": "team",
