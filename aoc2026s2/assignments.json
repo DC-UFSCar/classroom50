@@ -297,6 +297,54 @@
           "points": 10
         }
       ]
+    },
+    {
+      "slug": "riscv-pipeline",
+      "name": "Sim 10 RISC-V Pipeline",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "copy_about": true,
+      "copy_topics": true,
+      "template": {
+        "owner": "DC-UFSCar",
+        "repo": "riscv-pipeline",
+        "branch": "main"
+      },
+      "max_group_size": 9,
+      "team_formation": "student",
+      "runtime": {
+        "apt": [
+          "iverilog",
+          "gcc-riscv64-unknown-elf"
+        ]
+      },
+      "tests": [
+        {
+          "name": "Test base",
+          "type": "run",
+          "run": "./tests/run.sh base",
+          "points": 1
+        },
+        {
+          "name": "Test forward",
+          "type": "run",
+          "run": "./tests/run.sh forward",
+          "points": 3
+        },
+        {
+          "name": "Test stall",
+          "type": "run",
+          "run": "./tests/run.sh stall",
+          "points": 3
+        },
+        {
+          "name": "Test flush",
+          "type": "run",
+          "run": "./tests/run.sh flush",
+          "points": 3
+        }
+      ]
     }
   ]
 }
