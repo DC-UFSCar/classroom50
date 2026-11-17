@@ -213,6 +213,46 @@
           "formation": "student"
         }
       ]
+    },
+    "riscv-mono": {
+      "teams": [
+        {
+          "slug": "classroom50-group-00cee18cfda40870-1",
+          "id": 20372551,
+          "name": "Grupo 3",
+          "members": [
+            "julio-estudante",
+            "gabrielgasqui-beep",
+            "shengyanhuang1711",
+            "raulmartinsbessan-byte",
+            "laurafrancoso102"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-00cee18cfda40870-3",
+          "id": 20581253,
+          "name": "Grupo 1",
+          "members": [
+            "gustavoarduca-source",
+            "M4th-e",
+            "rlfraguasUFSCar",
+            "pedrohmora1s",
+            "pedrocanales-svg",
+            "sciarramellofelipe"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-00cee18cfda40870-4",
+          "id": 20581438,
+          "name": "Grupo 2",
+          "members": [
+            "anacags-alt"
+          ],
+          "formation": "student"
+        }
+      ]
     }
   }
 }
