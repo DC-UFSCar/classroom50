@@ -300,7 +300,7 @@
     },
     {
       "slug": "riscv-pipeline",
-      "name": "Sim 10 RISC-V Pipeline",
+      "name": "Sim 11 RISC-V Pipeline",
       "mode": "team",
       "autograder": "default",
       "feedback_pr": true,
@@ -311,7 +311,7 @@
         "repo": "riscv-pipeline",
         "branch": "main"
       },
-      "max_group_size": 9,
+      "max_group_size": 4,
       "team_formation": "student",
       "runtime": {
         "apt": [
