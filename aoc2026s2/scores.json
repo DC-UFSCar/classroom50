@@ -12821,6 +12821,436 @@
       ],
       "collected_at": "2026-10-22T13:54:11Z",
       "detected": []
+    },
+    "riscv-multi-lbsb": {
+      "type": "team",
+      "entries": [
+        {
+          "owner": "group-2",
+          "member_usernames": [
+            "calvinogata",
+            "gabivf",
+            "tho-hen"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-2",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-2",
+              "submission": "submit/2026-11-11T18-40-06Z-672f68e",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/commit/672f68ecc0dfe6cb835069dd089d8be301e175b0",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/releases/tag/submit%2F2026-11-11T18-40-06Z-672f68e",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/compare/16e7291ac0b5bacf7a1ecdb4a87796bf92863821...672f68ecc0dfe6cb835069dd089d8be301e175b0",
+              "datetime": "2026-11-11T18:39:50Z",
+              "graded_at": "2026-11-11T18:40:30Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "CalvinOgata",
+                "id": 78836622
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-2",
+              "submission": "submit/2026-11-11T17-55-54Z-9b16b9b",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/commit/9b16b9b2d93a66cc38fdde6210f3c298167d9473",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/releases/tag/submit%2F2026-11-11T17-55-54Z-9b16b9b",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/compare/16e7291ac0b5bacf7a1ecdb4a87796bf92863821...9b16b9b2d93a66cc38fdde6210f3c298167d9473",
+              "datetime": "2026-11-11T17:55:23Z",
+              "graded_at": "2026-11-11T17:56:16Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "CalvinOgata",
+                "id": 78836622
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-2",
+              "submission": "submit/2026-11-11T17-55-10Z-1360421",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/commit/13604213093ea62d9527f19cbe80af916ae99839",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/releases/tag/submit%2F2026-11-11T17-55-10Z-1360421",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/compare/16e7291ac0b5bacf7a1ecdb4a87796bf92863821...13604213093ea62d9527f19cbe80af916ae99839",
+              "datetime": "2026-11-11T17:54:44Z",
+              "graded_at": "2026-11-11T17:55:38Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "CalvinOgata",
+                "id": 78836622
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-2",
+              "submission": "submit/2026-11-11T17-53-47Z-3495b7f",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/commit/3495b7f680b90d23ab8f0cea3f1a2773d4b1e2f2",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/releases/tag/submit%2F2026-11-11T17-53-47Z-3495b7f",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-2/compare/16e7291ac0b5bacf7a1ecdb4a87796bf92863821...3495b7f680b90d23ab8f0cea3f1a2773d4b1e2f2",
+              "datetime": "2026-11-11T17:53:34Z",
+              "graded_at": "2026-11-11T17:54:51Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "CalvinOgata",
+                "id": 78836622
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-9",
+          "member_usernames": [
+            "1k3nj1",
+            "khrizzylee2"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-9",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-9",
+              "submission": "submit/2026-11-16T01-12-21Z-d1a57a1",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-9/commit/d1a57a1b3f542df0b17bf2afcf34663ebc1da59b",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-9/releases/tag/submit%2F2026-11-16T01-12-21Z-d1a57a1",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-9/compare/a61492a608272920b3d216af678b2410eee09889...d1a57a1b3f542df0b17bf2afcf34663ebc1da59b",
+              "datetime": "2026-11-16T01:11:59Z",
+              "graded_at": "2026-11-16T01:12:55Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "1k3nj1",
+                "id": 109699507
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-9",
+              "submission": "submit/2026-11-15T01-20-18Z-087254e",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-9/commit/087254eac374ab7d0977ef7e23a8825953d40395",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-9/releases/tag/submit%2F2026-11-15T01-20-18Z-087254e",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-9/compare/a61492a608272920b3d216af678b2410eee09889...087254eac374ab7d0977ef7e23a8825953d40395",
+              "datetime": "2026-11-15T01:19:54Z",
+              "graded_at": "2026-11-15T01:21:10Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "1k3nj1",
+                "id": 109699507
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-10",
+          "member_usernames": [
+            "beatriz-kwok",
+            "felipebp14-207",
+            "ggcisabela"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-10",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-10",
+              "submission": "submit/2026-11-16T02-57-55Z-efc981b",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-10/commit/efc981bf12dd1703b9e98f586dc086b95639a012",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-10/releases/tag/submit%2F2026-11-16T02-57-55Z-efc981b",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-10/compare/5f94cf00ac3c83943aebff5611858ccca0977876...efc981bf12dd1703b9e98f586dc086b95639a012",
+              "datetime": "2026-11-16T02:57:38Z",
+              "graded_at": "2026-11-16T02:58:22Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "felipebp14-207",
+                "id": 283814328
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-11",
+          "member_usernames": [
+            "murilo-destaole",
+            "phbr13"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-11",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-11",
+              "submission": "submit/2026-11-12T14-22-04Z-490cd4a",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-11/commit/490cd4abd3435cdfe487e651998f8644273669fc",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-11/releases/tag/submit%2F2026-11-12T14-22-04Z-490cd4a",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-11/compare/30f58c04af9ac2539296410a63194421df211697...490cd4abd3435cdfe487e651998f8644273669fc",
+              "datetime": "2026-11-12T14:21:35Z",
+              "graded_at": "2026-11-12T14:22:45Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "phbr13",
+                "id": 82122652
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-14",
+          "member_usernames": [
+            "joao-terra-png",
+            "nathalymdj",
+            "tomiokaka"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-14",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-14",
+              "submission": "submit/2026-11-12T14-12-09Z-b7ecda5",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-14/commit/b7ecda5960b9f1439763682ee3680bd7d70f9ca8",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-14/releases/tag/submit%2F2026-11-12T14-12-09Z-b7ecda5",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-14/compare/db1af19345dd1321272ca8efb5fa85e5f712ca51...b7ecda5960b9f1439763682ee3680bd7d70f9ca8",
+              "datetime": "2026-11-12T14:11:55Z",
+              "graded_at": "2026-11-12T14:12:43Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "Tomiokaka",
+                "id": 107153650
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-16",
+          "member_usernames": [
+            "bnccrs",
+            "henriqueastafieff-ufscar",
+            "joao-ufscar3"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-16",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-16",
+              "submission": "submit/2026-11-12T14-42-22Z-e63d33b",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-16/commit/e63d33bb37061db444fed46ffc0c96a75572e4ef",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-16/releases/tag/submit%2F2026-11-12T14-42-22Z-e63d33b",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-16/compare/e6846bd38ba4ff1cb8b6dfc2c4f57488064bd7ea...e63d33bb37061db444fed46ffc0c96a75572e4ef",
+              "datetime": "2026-11-12T14:37:13Z",
+              "graded_at": "2026-11-12T14:42:55Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "henriqueastafieff-ufscar",
+                "id": 270662820
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-17",
+          "member_usernames": [
+            "itzxw",
+            "rodrigbruno",
+            "vitorferracciu"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-17",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-17",
+              "submission": "submit/2026-11-12T14-30-55Z-cec8306",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-17/commit/cec8306c9de663aa06b8459a0cbf00e5be65f064",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-17/releases/tag/submit%2F2026-11-12T14-30-55Z-cec8306",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-17/compare/24fb05a27029cd2e07d4d26f39e78949d539c5ba...cec8306c9de663aa06b8459a0cbf00e5be65f064",
+              "datetime": "2026-11-12T14:30:41Z",
+              "graded_at": "2026-11-12T14:31:42Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "rodrigbruno",
+                "id": 269562510
+              }
+            }
+          ]
+        },
+        {
+          "owner": "group-18",
+          "member_usernames": [
+            "olelis777",
+            "pedro-testa-ptl"
+          ],
+          "team_slug": "classroom50-group-ec85fcdc62070d9e-18",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-18",
+              "submission": "submit/2026-11-12T14-46-55Z-43535ed",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-18/commit/43535ed7cdfdfd7cbcfa1a88c5eef74473618f3c",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-18/releases/tag/submit%2F2026-11-12T14-46-55Z-43535ed",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-18/compare/87e90c74c0fba0f9800cb408b9ead8f0e416ffdb...43535ed7cdfdfd7cbcfa1a88c5eef74473618f3c",
+              "datetime": "2026-11-12T14:46:32Z",
+              "graded_at": "2026-11-12T14:47:21Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": true,
+                  "score": 10,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "olelis777",
+                "id": 276157392
+              }
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "aoc2026s2",
+              "assignment_type": "team",
+              "owner": "group-18",
+              "submission": "submit/2026-11-12T14-30-42Z-0e077d5",
+              "commit": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-18/commit/0e077d54275e43fa6ac1b2c0bb99925290671dba",
+              "release": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-18/releases/tag/submit%2F2026-11-12T14-30-42Z-0e077d5",
+              "review": "https://github.com/DC-UFSCar/aoc2026s2-riscv-multi-lbsb-group-18/compare/87e90c74c0fba0f9800cb408b9ead8f0e416ffdb...0e077d54275e43fa6ac1b2c0bb99925290671dba",
+              "datetime": "2026-11-12T14:30:09Z",
+              "graded_at": "2026-11-12T14:31:16Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "Test LB/SB",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "olelis777",
+                "id": 276157392
+              }
+            }
+          ]
+        }
+      ],
+      "collected_at": "2026-11-17T15:27:34Z",
+      "detected": []
     }
   }
 }
