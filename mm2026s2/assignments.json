@@ -502,6 +502,19 @@
           "points": 3
         }
       ]
+    },
+    {
+      "slug": "trabalho-7-final",
+      "name": "Trabalho 7 (final)",
+      "mode": "team",
+      "autograder": "default",
+      "feedback_pr": true,
+      "no_autograder": true,
+      "max_group_size": 8,
+      "team_formation": "student",
+      "grading": {
+        "mode": "off"
+      }
     }
   ]
 }
